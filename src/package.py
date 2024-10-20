@@ -17,27 +17,30 @@ class Package:
         self.delayed = delayed
         self.delayed_until = delayed_until
         self.group = group
-        self.status = "At Hub"
-        self.delivery_time = None
-        self.truck = None
-        self.load_time = None
+        self.status = "At Hub"  # Initial status when the package is created.
+        self.delivery_time = None  # Set when the package is delivered.
+        self.truck = None  # Tracks which truck the package is on.
+        self.load_time = None  # Set when the package is loaded onto a truck.
         logging.info(f"Initialized Package {self.package_id}")
 
     def __str__(self):
         return f"Package {self.package_id}: {self.address}, {self.city}, {self.state} {self.zip_code}, Deadline: {self.deadline if self.deadline else 'EOD'}, Weight: {self.weight}kg, Status: {self.status}"
 
     def load(self, truck_id, time):
+        # Update the package status when it is loaded onto a truck.
         self.truck = truck_id
         self.load_time = time
         self.status = "En Route"
         logging.info(f"Package {self.package_id} loaded onto Truck {truck_id} at {time}")
 
     def deliver(self, time):
+        # Mark the package as delivered and set the delivery time.
         self.delivery_time = time
         self.status = "Delivered"
         logging.info(f"Package {self.package_id} delivered at {time}")
 
     def get_status(self, time):
+        # Determine the package status based on the provided time.
         if self.delivery_time and time >= self.delivery_time:
             status = "Delivered"
         elif self.load_time and time >= self.load_time:
@@ -49,6 +52,7 @@ class Package:
 
     @staticmethod
     def clean_address(address):
+        # Clean the address by removing parentheses, ZIP codes, and extra characters.
         address = re.sub(r'\(.*?\)', '', address)
         address = re.sub(r'\d{5}', '', address)
         address = re.sub(r'^.*?(?=\d)', '', address, flags=re.DOTALL)

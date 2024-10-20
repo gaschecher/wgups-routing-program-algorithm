@@ -1,5 +1,5 @@
-# Tried using the CSV but it was causing issues, so instead, I mapped the locations to their addresses & made a symmetrical distance matrix.
-# There are other ways I could have organized this, but I wanted to keep it compact.
+# I initially tried using just the CSV file, but it caused issues, so I mapped the locations to their addresses and created a symmetrical distance matrix.
+# While there were other ways to structure this, I chose to keep it compact.
 
 location_to_address = {
     "HUB": "4001 South 700 East, Salt Lake City, UT 84107",

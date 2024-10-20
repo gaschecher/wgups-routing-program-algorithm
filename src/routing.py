@@ -6,6 +6,8 @@ from .data.locations import location_to_address, distance_matrix
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+# Clean the address by removing extraneous elements like parentheses, ZIP codes, and directional prefixes.
+# This function exists in package.py and routing.py with slight variations. In a production environment, I would move this to a shared folder and reuse the same function.
 def clean_address(address):
     if address.upper() == "HUB":
         return "HUB"
@@ -14,9 +16,9 @@ def clean_address(address):
     address = re.sub(r'^(South|North|East|West|S|N|E|W)\s+', '', address, flags=re.IGNORECASE)
     address = re.sub(r'^.*?(?=\d)', '', address, flags=re.DOTALL)
     address = address.replace('\n', ' ').strip()
-    address = address.replace('bus loop', 'Bus Loop')
     return address
 
+# Get the index of a location from the address, matching cleaned addresses.
 def get_location_index(address):
     if address.upper() == "HUB":
         return list(location_to_address.keys()).index("HUB")
@@ -27,6 +29,7 @@ def get_location_index(address):
     logging.error(f"Address not found: {address}")
     return -1
 
+# Get the distance between two addresses using the distance matrix.
 def get_distance(from_address, to_address):
     from_index = get_location_index(from_address)
     to_index = get_location_index(to_address)
@@ -38,12 +41,14 @@ def get_distance(from_address, to_address):
     
     return distance_matrix[from_index][to_index]
 
+# Find the nearest package for the truck from the list of undelivered packages.
 def nearest_neighbor(truck, undelivered_packages):
     logging.debug(f"Finding nearest neighbor for truck {truck.truck_id}")
     if not undelivered_packages:
         logging.debug("No undelivered packages left")
         return None
     
+    # Prioritize packages with a deadline.
     deadline_packages = [p for p in undelivered_packages if p.deadline and p.deadline != ""]
     if deadline_packages:
         nearest_package = min(deadline_packages, 
@@ -55,18 +60,21 @@ def nearest_neighbor(truck, undelivered_packages):
     logging.debug(f"Nearest package found: {nearest_package.package_id}")
     return nearest_package
 
+# Calculate the delivery route for a truck using the nearest neighbor.
 def calculate_route(truck, packages):
     logging.info(f"Calculating route for truck {truck.truck_id}")
     undelivered = packages.copy()
     route = []
-    current_location = "4001 South 700 East, Salt Lake City, UT 84107"
+    current_location = "4001 South 700 East, Salt Lake City, UT 84107"  # Packages always start at the HUB.
     
+    # Loop through all undelivered packages and build the route.
     while undelivered:
         next_package = nearest_neighbor(truck, undelivered)
         if next_package is None:
             break
         
         try:
+            # Calculate the distance to the next package and add it to the route.
             distance = get_distance(current_location, next_package.address)
             route.append((next_package, distance))
             logging.debug(f"Added to route: Package {next_package.package_id}, Distance: {distance}")
@@ -80,6 +88,7 @@ def calculate_route(truck, packages):
             logging.error(f"Remaining undelivered packages: {[p.package_id for p in undelivered]}")
             sys.exit(1)
     
+    # After all packages are delivered, calculate distance back to the hub.
     try:
         distance_to_hub = get_distance(current_location, "4001 South 700 East, Salt Lake City, UT 84107")
         route.append((None, distance_to_hub))
@@ -92,6 +101,7 @@ def calculate_route(truck, packages):
     logging.info(f"Finished calculating route for truck {truck.truck_id}. Total stops: {len(route)}")
     return route
 
+# Optimize routes for all trucks.
 def optimize_routes(trucks, distances):
     logging.info("Optimizing routes for all trucks")
     routes = {}

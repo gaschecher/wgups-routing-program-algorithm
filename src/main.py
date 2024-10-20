@@ -12,6 +12,7 @@ from .data.packages import packages
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+# Create the hash table for packages; this includes what is required in the instructions and some additional fields (see packages.py in the data directory for more info).
 def create_package_hash_table():
     package_hash = HashTable()
     for package_data in packages:
@@ -29,6 +30,7 @@ def create_package_hash_table():
             package_data["Delayed Until"],
             package_data["Group"]
         )
+        # Insert each package into the hash table.
         package_hash.insert(package.package_id, package)
     logging.info(f"Created package hash table with {len(packages)} packages")
     return package_hash
@@ -43,6 +45,7 @@ def print_package_status(hash_table, time):
             print(f"Package {package.package_id}: {status}")
             logging.debug(f"Package {package.package_id} status: {status}")
 
+# Simulate deliveries for each truck. I called it simulate_deliveries but in production it would be something like deliver_packages.
 def simulate_deliveries(trucks):
     logging.info("Starting delivery simulation")
     current_time = datetime.now().replace(hour=8, minute=0, second=0, microsecond=0)
@@ -50,6 +53,9 @@ def simulate_deliveries(trucks):
 
     while active_trucks:
         for truck in active_trucks:
+            # If the truck has no route, remove it from active trucks. With 3 trucks and 2 drivers, all trucks are loaded before 8:00 AM.
+            # Once a truck finishes its route, it's removed, allowing another truck to be deployed, ensuring efficient use of the drivers through continuous truck rotation.
+
             if not truck.route:
                 active_trucks.remove(truck)
                 if len(active_trucks) < 2 and trucks[2].packages:
@@ -59,14 +65,15 @@ def simulate_deliveries(trucks):
 
             package, distance = truck.route.pop(0)
             if package:
+                # Calculate the time required to deliver the package.
                 current_time = max(current_time, package.load_time or current_time)
-                
                 travel_time = distance / truck.speed
                 current_time += timedelta(hours=travel_time)
                 truck.time = current_time
                 truck.deliver_package(package, distance)
                 logging.info(f"Delivered package {package.package_id} at {current_time}. Distance: {distance:.1f} miles, New location: {truck.current_location}")
             else:
+                # Return to hub if no package is present, meaning all deliveries are done for the truck.
                 travel_time = distance / truck.speed
                 current_time += timedelta(hours=travel_time)
                 truck.time = current_time
@@ -83,17 +90,24 @@ def assign_packages_to_trucks(trucks, packages):
     deadline_packages = []
 
     for package in packages:
+        # Check if the package is assigned to a specific truck, load it directly.
         if package.truck_number:
             trucks[int(package.truck_number) - 1].load_package(package)
+        # Check if the package is part of a group that must be delivered together.
         elif package.group:
             grouped_packages.append(package)
+        # Check if the package is delayed and assign it to the third truck, since we have 3 trucks and 2 drivers.
+        # If we had 2 trucks and 2 drivers, the logic would be different.
         elif package.delayed:
             trucks[2].load_package(package, datetime.strptime(package.delayed_until, "%H:%M"))
+        # Check if the package has a delivery deadline, prioritize assigning it.
         elif package.deadline and package.deadline != "":
             deadline_packages.append(package)
+        # If none of the above apply, mark it as unassigned for now.
         else:
             unassigned_packages.append(package)
 
+    # Assign grouped packages to the first two trucks if there's enough capacity.
     for package in grouped_packages:
         assigned = False
         for truck in trucks[:2]:
@@ -105,8 +119,11 @@ def assign_packages_to_trucks(trucks, packages):
         if assigned:
             break
 
+    # Assign packages with deadlines based on the shortest route.
     for package in deadline_packages:
+        # Calculate the distances to other packages in the first two trucks.
         distances = [sum(get_distance(package.address, p.address) for p in truck.packages) for truck in trucks[:2]]
+        # Assign the package to the truck with the shorter distance.
         if not distances[0] and not distances[1]:
             trucks[0].load_package(package)
         elif distances[0] <= distances[1]:
@@ -114,12 +131,15 @@ def assign_packages_to_trucks(trucks, packages):
         else:
             trucks[1].load_package(package)
 
+    # Assign remaining unassigned packages to the truck with the shortest distance to other packages.
     for package in unassigned_packages:
         distances = [sum(get_distance(package.address, p.address) for p in truck.packages) for truck in trucks]
+        # Find the truck with the shortest total distance and check capacity.
         min_distance_index = distances.index(min(distances))
         if len(trucks[min_distance_index].packages) < trucks[min_distance_index].capacity:
             trucks[min_distance_index].load_package(package)
         else:
+            # If no trucks have enough capacity, try to assign to any avaliable truck.
             for i in range(3):
                 if len(trucks[i].packages) < trucks[i].capacity:
                     trucks[i].load_package(package)
@@ -139,12 +159,14 @@ def main():
 
         assign_packages_to_trucks(trucks, packages)
 
+        # Optimize the routes for each truck.
         for truck in trucks:
-            truck.current_location = "4001 South 700 East, Salt Lake City, UT 84107"  # Full HUB address
+            truck.current_location = "4001 South 700 East, Salt Lake City, UT 84107" 
             truck.route = optimize_routes([truck], distance_matrix)[truck.truck_id]
 
         simulate_deliveries(trucks)
 
+        # Calculate and log total mileage.
         total_mileage = sum(truck.mileage for truck in trucks)
         logging.info(f"Total mileage for all trucks: {total_mileage:.1f} miles")
         print(f"Total mileage for all trucks: {total_mileage:.1f} miles")
@@ -153,6 +175,7 @@ def main():
             time = datetime.strptime(time_str, "%I:%M %p").replace(year=datetime.now().year, month=datetime.now().month, day=datetime.now().day)
             print_package_status(package_hash, time)
 
+        # Allow user to check the status of individual packages.
         while True:
             package_id = input("\nEnter a package ID to check its status (or 'q' to quit): ")
             if package_id.lower() == 'q':

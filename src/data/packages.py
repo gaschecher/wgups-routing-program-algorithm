@@ -1,4 +1,13 @@
-# WGUPS package data. Again, I tried to use a CSV but python was struggling to interpret the data & I'm not an expert on CSV files.
+# I converted the files provided in the instructions into a .py format to allow Python to process the data more efficiently.
+
+# After reviewing the data, I found that the "additional instructions" attribute wasn't optimal for Python, so I replaced it with:
+# - A 'Delayed' boolean to indicate if a package is delayed
+# - A 'Delayed Until' time, which defaults to empty for packages that aren't delayed
+# - A 'Group' boolean to indicate if the package is part of a group mentioned in the instructions
+# Since grouped packages seem to be delivered together, I assume they're all on the same truck.
+# I also removed "EOD" as a deadline because, given the truck's range, all deliveries should be completed the same day.
+
+# In the retro document attached to the assignment submission, I'll talk about how I would organize this data different in a real-world scenario, where we have more control over the input.
 
 packages = [
     {
