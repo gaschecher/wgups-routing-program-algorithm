@@ -24,7 +24,7 @@ class Package:
         logging.info(f"Initialized Package {self.package_id}")
 
     def __str__(self):
-        return f"Package {self.package_id}: {self.address}, {self.city}, {self.state} {self.zip_code}, Due: {self.deadline}, Weight: {self.weight}kg, Status: {self.status}"
+        return f"Package {self.package_id}: {self.address}, {self.city}, {self.state} {self.zip_code}, Deadline: {self.deadline if self.deadline else 'EOD'}, Weight: {self.weight}kg, Status: {self.status}"
 
     def load(self, truck_id, time):
         self.truck = truck_id
