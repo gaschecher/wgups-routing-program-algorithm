@@ -12,6 +12,10 @@ from .data.packages import packages
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+# Global variables for API access
+package_hash = None
+trucks = None
+
 # Create the hash table for packages; this includes what is required in the instructions and some additional fields (see packages.py in the data directory for more info).
 def create_package_hash_table():
     package_hash = HashTable()
@@ -149,27 +153,31 @@ def assign_packages_to_trucks(trucks, packages):
 
     logging.info(f"Finished assigning packages. Truck 1: {len(trucks[0].packages)} packages, Truck 2: {len(trucks[1].packages)} packages, Truck 3: {len(trucks[2].packages)} packages")
 
+def initialize_data():
+    global package_hash, trucks
+    logging.info("Initializing data for WGUPS Routing Program")
+    package_hash = create_package_hash_table()
+
+    trucks = [Truck(1), Truck(2), Truck(3)]
+    packages = [package_hash.lookup(i) for i in range(1, 41) if package_hash.lookup(i)]
+
+    assign_packages_to_trucks(trucks, packages)
+
+    # Optimize the routes for each truck.
+    for truck in trucks:
+        truck.current_location = "4001 South 700 East, Salt Lake City, UT 84107" 
+        truck.route = optimize_routes([truck], distance_matrix)[truck.truck_id]
+
+    simulate_deliveries(trucks)
+
+    # Calculate and log total mileage.
+    total_mileage = sum(truck.mileage for truck in trucks)
+    logging.info(f"Total mileage for all trucks: {total_mileage:.1f} miles")
+    print(f"Total mileage for all trucks: {total_mileage:.1f} miles")
+
 def main():
     try:
-        logging.info("Starting WGUPS Routing Program")
-        package_hash = create_package_hash_table()
-
-        trucks = [Truck(1), Truck(2), Truck(3)]
-        packages = [package_hash.lookup(i) for i in range(1, 41) if package_hash.lookup(i)]
-
-        assign_packages_to_trucks(trucks, packages)
-
-        # Optimize the routes for each truck.
-        for truck in trucks:
-            truck.current_location = "4001 South 700 East, Salt Lake City, UT 84107" 
-            truck.route = optimize_routes([truck], distance_matrix)[truck.truck_id]
-
-        simulate_deliveries(trucks)
-
-        # Calculate and log total mileage.
-        total_mileage = sum(truck.mileage for truck in trucks)
-        logging.info(f"Total mileage for all trucks: {total_mileage:.1f} miles")
-        print(f"Total mileage for all trucks: {total_mileage:.1f} miles")
+        initialize_data()
 
         for time_str in ["9:00 AM", "10:00 AM", "1:00 PM"]:
             time = datetime.strptime(time_str, "%I:%M %p").replace(year=datetime.now().year, month=datetime.now().month, day=datetime.now().day)
