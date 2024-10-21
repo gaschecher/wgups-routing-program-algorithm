@@ -14,6 +14,7 @@ class Truck:
         self.current_location = "4001 South 700 East, Salt Lake City, UT 84107" 
         self.time = datetime.strptime("8:00 AM", "%I:%M %p")
         self.route = []
+        self.delivery_history = []
         logging.info(f"Initialized Truck {self.truck_id}")
 
     # Load a package onto the truck.
@@ -40,6 +41,7 @@ class Truck:
         package.deliver(self.time)  # Mark the package as delivered at the current time.
         if package in self.packages:
             self.packages.remove(package)  # Remove the package from the truck.
+        self.delivery_history.append((self.time, self.mileage))
         logging.info(f"Delivered package {package.package_id} at {self.time}. New location: {self.current_location}, New mileage: {self.mileage}")
 
     # Return the truck to the HUB and update the truck's mileage and time.
@@ -48,7 +50,14 @@ class Truck:
         self.time += timedelta(hours=travel_time)  # Update the truck's time after returning.
         self.mileage += distance_to_hub  # Add the distance to the hub to the truck's mileage.
         self.current_location = "4001 South 700 East, Salt Lake City, UT 84107"  # Set current location back to the hub.
+        self.delivery_history.append((self.time, self.mileage))
         logging.info(f"Truck {self.truck_id} returned to HUB at {self.time}. Total mileage: {self.mileage}")
+
+    def get_mileage_at_time(self, time):
+        for delivery_time, mileage in self.delivery_history:
+            if delivery_time > time:
+                return mileage
+        return self.mileage  # Return total mileage if time is after all deliveries
 
     def __str__(self):
         return f"Truck {self.truck_id}: {len(self.packages)}/{self.capacity} packages, {self.mileage:.1f} miles traveled"
