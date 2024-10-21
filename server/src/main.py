@@ -175,9 +175,11 @@ def initialize_data():
     logging.info(f"Total mileage for all trucks: {total_mileage:.1f} miles")
     print(f"Total mileage for all trucks: {total_mileage:.1f} miles")
 
+# Initialize data when the module is imported
+initialize_data()
+
 def main():
     try:
-        initialize_data()
 
         for time_str in ["9:00 AM", "10:00 AM", "1:00 PM"]:
             time = datetime.strptime(time_str, "%I:%M %p").replace(year=datetime.now().year, month=datetime.now().month, day=datetime.now().day)
