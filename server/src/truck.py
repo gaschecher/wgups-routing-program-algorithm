@@ -15,6 +15,7 @@ class Truck:
         self.time = datetime.strptime("8:00 AM", "%I:%M %p")
         self.route = []
         self.delivery_history = []
+        self.departure_time = None
         logging.info(f"Initialized Truck {self.truck_id}")
 
     # Load a package onto the truck.
@@ -31,11 +32,17 @@ class Truck:
         logging.warning(f"Failed to load package {package.package_id} onto Truck {self.truck_id}: Capacity full")
         return False
 
+    def depart(self, time):
+        self.departure_time = time
+        for package in self.packages:
+            package.set_en_route(time)
+        logging.info(f"Truck {self.truck_id} departed at {time}")
+
     # Deliver a package and update the truck's status.
-    def deliver_package(self, package, distance):
+    def deliver_package(self, package, distance, current_time):
         # Calculate travel time based on the distance and truck's speed.
         travel_time = distance / self.speed
-        self.time += timedelta(hours=travel_time)  # Update the truck's time after travel.
+        self.time = current_time
         self.mileage += distance  # Increase the truck's mileage.
         self.current_location = package.address  # Update the truck's current location.
         package.deliver(self.time)  # Mark the package as delivered at the current time.

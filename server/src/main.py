@@ -64,6 +64,7 @@ def simulate_deliveries(trucks):
                 active_trucks.remove(truck)
                 if len(active_trucks) < 2 and trucks[2].packages:
                     trucks[2].time = current_time
+                    trucks[2].depart(current_time)
                     active_trucks.append(trucks[2])
                 continue
 
@@ -74,7 +75,7 @@ def simulate_deliveries(trucks):
                 travel_time = distance / truck.speed
                 current_time += timedelta(hours=travel_time)
                 truck.time = current_time
-                truck.deliver_package(package, distance)
+                truck.deliver_package(package, distance, current_time)
                 logging.info(f"Delivered package {package.package_id} at {current_time}. Distance: {distance:.1f} miles, New location: {truck.current_location}")
             else:
                 # Return to hub if no package is present, meaning all deliveries are done for the truck.

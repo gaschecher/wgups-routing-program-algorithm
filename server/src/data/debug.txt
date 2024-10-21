@@ -1,0 +1,1005 @@
+PS C:\Users\123\Desktop\Assignments\Algoriths II\wgups-routing-program-algorithm> python -m src.main
+2024-10-20 14:36:56,542 - INFO - Starting WGUPS Routing Program
+2024-10-20 14:36:56,542 - INFO - Initialized HashTable with size 40
+2024-10-20 14:36:56,543 - INFO - Initialized Package 1
+2024-10-20 14:36:56,543 - DEBUG - Inserted new key-value pair 1:Package 1: 5 W Oakland Ave, Salt Lake City, UT 84115, Due: 10:30, Weight: 21kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,543 - INFO - Initialized Package 2
+2024-10-20 14:36:56,543 - DEBUG - Inserted new key-value pair 2:Package 2: 30 S 500 E, Salt Lake City, UT 84106, Due: , Weight: 44kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,543 - INFO - Initialized Package 3
+2024-10-20 14:36:56,543 - DEBUG - Inserted new key-value pair 3:Package 3: 3 Canyon Rd, Salt Lake City, UT 84103, Due: , Weight: 2kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,543 - INFO - Initialized Package 4
+2024-10-20 14:36:56,543 - DEBUG - Inserted new key-value pair 4:Package 4: 0 W 2880 S, Salt Lake City, UT 84115, Due: , Weight: 4kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,543 - INFO - Initialized Package 5
+2024-10-20 14:36:56,543 - DEBUG - Inserted new key-value pair 5:Package 5: 0 S State St, Salt Lake City, UT 84111, Due: , Weight: 5kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,543 - INFO - Initialized Package 6
+2024-10-20 14:36:56,543 - DEBUG - Inserted new key-value pair 6:Package 6: 60 Lester St, West Valley City, UT 84119, Due: 10:30, Weight: 88kg, Status: At Hub into HashTable 
+2024-10-20 14:36:56,543 - INFO - Initialized Package 7
+2024-10-20 14:36:56,543 - DEBUG - Inserted new key-value pair 7:Package 7: 30 2100 S, Salt Lake City, UT 84106, Due: , Weight: 8kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,544 - INFO - Initialized Package 8
+2024-10-20 14:36:56,544 - DEBUG - Inserted new key-value pair 8:Package 8: 0 State St, Salt Lake City, UT 84103, Due: , Weight: 9kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,544 - INFO - Initialized Package 9
+2024-10-20 14:36:56,544 - DEBUG - Inserted new key-value pair 9:Package 9: 0 State St, Salt Lake City, UT 84103, Due: , Weight: 2kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,544 - INFO - Initialized Package 10
+2024-10-20 14:36:56,544 - DEBUG - Inserted new key-value pair 10:Package 10: 0 E 900 South, Salt Lake City, UT 84105, Due: , Weight: 1kg, Status: At Hub into HashTable      
+2024-10-20 14:36:56,544 - INFO - Initialized Package 11
+2024-10-20 14:36:56,544 - DEBUG - Inserted new key-value pair 11:Package 11: 00 Taylorsville Blvd, Salt Lake City, UT 84118, Due: , Weight: 1kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,544 - INFO - Initialized Package 12
+2024-10-20 14:36:56,545 - DEBUG - Inserted new key-value pair 12:Package 12: 75 W Valley Central Station Bus Loop, West Valley City, UT 84119, Due: , Weight: 1kg, Status: At Hub into HashTable     
+2024-10-20 14:36:56,545 - INFO - Initialized Package 13
+2024-10-20 14:36:56,545 - DEBUG - Inserted new key-value pair 13:Package 13: 10 W 500 S, Salt Lake City, UT 84104, Due: 10:30, Weight: 2kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,545 - INFO - Initialized Package 14
+2024-10-20 14:36:56,545 - DEBUG - Inserted new key-value pair 14:Package 14: 00 S 1300 E, Millcreek, UT 84117, Due: 10:30, Weight: 88kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,545 - INFO - Initialized Package 15
+2024-10-20 14:36:56,545 - DEBUG - Inserted new key-value pair 15:Package 15: 80 S 2300 E, Holladay, UT 84117, Due: 9:00, Weight: 4kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,545 - INFO - Initialized Package 16
+2024-10-20 14:36:56,545 - DEBUG - Inserted new key-value pair 16:Package 16: 80 S 2300 E, Holladay, UT 84117, Due: 10:30, Weight: 88kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,546 - INFO - Initialized Package 17
+2024-10-20 14:36:56,546 - DEBUG - Inserted new key-value pair 17:Package 17: 48 S 1100 W, Salt Lake City, UT 84119, Due: , Weight: 2kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,546 - INFO - Initialized Package 18
+2024-10-20 14:36:56,546 - DEBUG - Inserted new key-value pair 18:Package 18: 88 4800 S, Salt Lake City, UT 84123, Due: , Weight: 6kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,546 - INFO - Initialized Package 19
+2024-10-20 14:36:56,546 - DEBUG - Inserted new key-value pair 19:Package 19: 7 W Price Ave, Salt Lake City, UT 84115, Due: , Weight: 37kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,546 - INFO - Initialized Package 20
+2024-10-20 14:36:56,546 - DEBUG - Inserted new key-value pair 20:Package 20: 95 Main St, Salt Lake City, UT 84115, Due: 10:30, Weight: 37kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,546 - INFO - Initialized Package 21
+2024-10-20 14:36:56,546 - DEBUG - Inserted new key-value pair 21:Package 21: 95 Main St, Salt Lake City, UT 84115, Due: , Weight: 3kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,546 - INFO - Initialized Package 22
+2024-10-20 14:36:56,547 - DEBUG - Inserted new key-value pair 22:Package 22: 51 South 900 East, Murray, UT 84121, Due: , Weight: 2kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,547 - INFO - Initialized Package 23
+2024-10-20 14:36:56,547 - DEBUG - Inserted new key-value pair 23:Package 23: 00 South 2700 West, Salt Lake City, UT 84118, Due: , Weight: 5kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,547 - INFO - Initialized Package 24
+2024-10-20 14:36:56,547 - DEBUG - Inserted new key-value pair 24:Package 24: 25 State St, Murray, UT 84107, Due: , Weight: 7kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,547 - INFO - Initialized Package 25
+2024-10-20 14:36:56,547 - DEBUG - Inserted new key-value pair 25:Package 25: 83 South 900 East #104, Salt Lake City, UT 84117, Due: 10:30, Weight: 7kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,547 - INFO - Initialized Package 26
+2024-10-20 14:36:56,547 - DEBUG - Inserted new key-value pair 26:Package 26: 83 South 900 East #104, Salt Lake City, UT 84117, Due: , Weight: 25kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,548 - INFO - Initialized Package 27
+2024-10-20 14:36:56,548 - DEBUG - Inserted new key-value pair 27:Package 27: 60 Dalton Ave S, Salt Lake City, UT 84104, Due: , Weight: 5kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,548 - INFO - Initialized Package 28
+2024-10-20 14:36:56,548 - DEBUG - Inserted new key-value pair 28:Package 28: 35 Main St, Salt Lake City, UT 84115, Due: , Weight: 7kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,548 - INFO - Initialized Package 29
+2024-10-20 14:36:56,548 - DEBUG - Inserted new key-value pair 29:Package 29: 30 2100 S, Salt Lake City, UT 84106, Due: 10:30, Weight: 2kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,548 - INFO - Initialized Package 30
+2024-10-20 14:36:56,548 - DEBUG - Inserted new key-value pair 30:Package 30: 0 State St, Salt Lake City, UT 84103, Due: 10:30, Weight: 1kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,548 - INFO - Initialized Package 31
+2024-10-20 14:36:56,549 - DEBUG - Inserted new key-value pair 31:Package 31: 65 S 900 W, Salt Lake City, UT 84119, Due: 10:30, Weight: 1kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,549 - INFO - Initialized Package 32
+2024-10-20 14:36:56,549 - DEBUG - Inserted new key-value pair 32:Package 32: 65 S 900 W, Salt Lake City, UT 84119, Due: , Weight: 1kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,549 - INFO - Initialized Package 33
+2024-10-20 14:36:56,549 - DEBUG - Inserted new key-value pair 33:Package 33: 30 S 500 E, Salt Lake City, UT 84106, Due: , Weight: 1kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,549 - INFO - Initialized Package 34
+2024-10-20 14:36:56,549 - DEBUG - Inserted new key-value pair 34:Package 34: 80 S 2300 E, Holladay, UT 84117, Due: 10:30, Weight: 2kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,550 - INFO - Initialized Package 35
+2024-10-20 14:36:56,550 - DEBUG - Inserted new key-value pair 35:Package 35: 60 Dalton Ave S, Salt Lake City, UT 84104, Due: , Weight: 88kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,550 - INFO - Initialized Package 36
+2024-10-20 14:36:56,550 - DEBUG - Inserted new key-value pair 36:Package 36: 00 Parkway Blvd, West Valley City, UT 84119, Due: , Weight: 88kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,550 - INFO - Initialized Package 37
+2024-10-20 14:36:56,550 - DEBUG - Inserted new key-value pair 37:Package 37: 0 S State St, Salt Lake City, UT 84111, Due: 10:30, Weight: 2kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,550 - INFO - Initialized Package 38
+2024-10-20 14:36:56,550 - DEBUG - Inserted new key-value pair 38:Package 38: 0 S State St, Salt Lake City, UT 84111, Due: , Weight: 9kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,551 - INFO - Initialized Package 39
+2024-10-20 14:36:56,551 - DEBUG - Inserted new key-value pair 39:Package 39: 10 W 500 S, Salt Lake City, UT 84104, Due: , Weight: 9kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,551 - INFO - Initialized Package 40
+2024-10-20 14:36:56,551 - DEBUG - Inserted new key-value pair 40:Package 40: 0 W 2880 S, Salt Lake City, UT 84115, Due: 10:30, Weight: 45kg, Status: At Hub into HashTable
+2024-10-20 14:36:56,551 - INFO - Created package hash table with 40 packages
+2024-10-20 14:36:56,554 - INFO - Initialized Truck 1
+2024-10-20 14:36:56,554 - INFO - Initialized Truck 2
+2024-10-20 14:36:56,554 - INFO - Initialized Truck 3
+2024-10-20 14:36:56,555 - DEBUG - Lookup successful for key 1
+2024-10-20 14:36:56,555 - DEBUG - Lookup successful for key 1
+2024-10-20 14:36:56,555 - DEBUG - Lookup successful for key 2
+2024-10-20 14:36:56,555 - DEBUG - Lookup successful for key 2
+2024-10-20 14:36:56,555 - DEBUG - Lookup successful for key 3
+2024-10-20 14:36:56,555 - DEBUG - Lookup successful for key 3
+2024-10-20 14:36:56,555 - DEBUG - Lookup successful for key 4
+2024-10-20 14:36:56,555 - DEBUG - Lookup successful for key 4
+2024-10-20 14:36:56,555 - DEBUG - Lookup successful for key 5
+2024-10-20 14:36:56,556 - DEBUG - Lookup successful for key 5
+2024-10-20 14:36:56,556 - DEBUG - Lookup successful for key 6
+2024-10-20 14:36:56,556 - DEBUG - Lookup successful for key 6
+2024-10-20 14:36:56,556 - DEBUG - Lookup successful for key 7
+2024-10-20 14:36:56,556 - DEBUG - Lookup successful for key 7
+2024-10-20 14:36:56,556 - DEBUG - Lookup successful for key 8
+2024-10-20 14:36:56,556 - DEBUG - Lookup successful for key 8
+2024-10-20 14:36:56,556 - DEBUG - Lookup successful for key 9
+2024-10-20 14:36:56,556 - DEBUG - Lookup successful for key 9
+2024-10-20 14:36:56,557 - DEBUG - Lookup successful for key 10
+2024-10-20 14:36:56,557 - DEBUG - Lookup successful for key 10
+2024-10-20 14:36:56,557 - DEBUG - Lookup successful for key 11
+2024-10-20 14:36:56,557 - DEBUG - Lookup successful for key 11
+2024-10-20 14:36:56,557 - DEBUG - Lookup successful for key 12
+2024-10-20 14:36:56,557 - DEBUG - Lookup successful for key 12
+2024-10-20 14:36:56,557 - DEBUG - Lookup successful for key 13
+2024-10-20 14:36:56,557 - DEBUG - Lookup successful for key 13
+2024-10-20 14:36:56,557 - DEBUG - Lookup successful for key 14
+2024-10-20 14:36:56,557 - DEBUG - Lookup successful for key 14
+2024-10-20 14:36:56,557 - DEBUG - Lookup successful for key 15
+2024-10-20 14:36:56,557 - DEBUG - Lookup successful for key 15
+2024-10-20 14:36:56,558 - DEBUG - Lookup successful for key 16
+2024-10-20 14:36:56,558 - DEBUG - Lookup successful for key 16
+2024-10-20 14:36:56,558 - DEBUG - Lookup successful for key 17
+2024-10-20 14:36:56,558 - DEBUG - Lookup successful for key 17
+2024-10-20 14:36:56,558 - DEBUG - Lookup successful for key 18
+2024-10-20 14:36:56,558 - DEBUG - Lookup successful for key 18
+2024-10-20 14:36:56,558 - DEBUG - Lookup successful for key 19
+2024-10-20 14:36:56,558 - DEBUG - Lookup successful for key 19
+2024-10-20 14:36:56,558 - DEBUG - Lookup successful for key 20
+2024-10-20 14:36:56,558 - DEBUG - Lookup successful for key 20
+2024-10-20 14:36:56,558 - DEBUG - Lookup successful for key 21
+2024-10-20 14:36:56,558 - DEBUG - Lookup successful for key 21
+2024-10-20 14:36:56,559 - DEBUG - Lookup successful for key 22
+2024-10-20 14:36:56,559 - DEBUG - Lookup successful for key 22
+2024-10-20 14:36:56,559 - DEBUG - Lookup successful for key 23
+2024-10-20 14:36:56,559 - DEBUG - Lookup successful for key 23
+2024-10-20 14:36:56,559 - DEBUG - Lookup successful for key 24
+2024-10-20 14:36:56,559 - DEBUG - Lookup successful for key 24
+2024-10-20 14:36:56,559 - DEBUG - Lookup successful for key 25
+2024-10-20 14:36:56,559 - DEBUG - Lookup successful for key 25
+2024-10-20 14:36:56,559 - DEBUG - Lookup successful for key 26
+2024-10-20 14:36:56,559 - DEBUG - Lookup successful for key 26
+2024-10-20 14:36:56,560 - DEBUG - Lookup successful for key 27
+2024-10-20 14:36:56,560 - DEBUG - Lookup successful for key 27
+2024-10-20 14:36:56,560 - DEBUG - Lookup successful for key 28
+2024-10-20 14:36:56,560 - DEBUG - Lookup successful for key 28
+2024-10-20 14:36:56,560 - DEBUG - Lookup successful for key 29
+2024-10-20 14:36:56,560 - DEBUG - Lookup successful for key 29
+2024-10-20 14:36:56,560 - DEBUG - Lookup successful for key 30
+2024-10-20 14:36:56,560 - DEBUG - Lookup successful for key 30
+2024-10-20 14:36:56,560 - DEBUG - Lookup successful for key 31
+2024-10-20 14:36:56,560 - DEBUG - Lookup successful for key 31
+2024-10-20 14:36:56,560 - DEBUG - Lookup successful for key 32
+2024-10-20 14:36:56,560 - DEBUG - Lookup successful for key 32
+2024-10-20 14:36:56,561 - DEBUG - Lookup successful for key 33
+2024-10-20 14:36:56,561 - DEBUG - Lookup successful for key 33
+2024-10-20 14:36:56,561 - DEBUG - Lookup successful for key 34
+2024-10-20 14:36:56,561 - DEBUG - Lookup successful for key 34
+2024-10-20 14:36:56,561 - DEBUG - Lookup successful for key 35
+2024-10-20 14:36:56,561 - DEBUG - Lookup successful for key 35
+2024-10-20 14:36:56,561 - DEBUG - Lookup successful for key 36
+2024-10-20 14:36:56,561 - DEBUG - Lookup successful for key 36
+2024-10-20 14:36:56,561 - DEBUG - Lookup successful for key 37
+2024-10-20 14:36:56,561 - DEBUG - Lookup successful for key 37
+2024-10-20 14:36:56,561 - DEBUG - Lookup successful for key 38
+2024-10-20 14:36:56,561 - DEBUG - Lookup successful for key 38
+2024-10-20 14:36:56,562 - DEBUG - Lookup successful for key 39
+2024-10-20 14:36:56,562 - DEBUG - Lookup successful for key 39
+2024-10-20 14:36:56,562 - DEBUG - Lookup successful for key 40
+2024-10-20 14:36:56,562 - DEBUG - Lookup successful for key 40
+2024-10-20 14:36:56,562 - INFO - Assigning packages to trucks
+2024-10-20 14:36:56,562 - INFO - Package 3 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,562 - DEBUG - Loaded package 3 onto Truck 2
+2024-10-20 14:36:56,562 - INFO - Package 6 loaded onto Truck 3 at 1900-01-01 09:05:00
+2024-10-20 14:36:56,563 - DEBUG - Loaded package 6 onto Truck 3 with delayed load time 1900-01-01 09:05:00
+2024-10-20 14:36:56,563 - INFO - Package 9 loaded onto Truck 3 at 1900-01-01 10:20:00
+2024-10-20 14:36:56,563 - DEBUG - Loaded package 9 onto Truck 3 with delayed load time 1900-01-01 10:20:00
+2024-10-20 14:36:56,563 - INFO - Package 18 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,563 - DEBUG - Loaded package 18 onto Truck 2
+2024-10-20 14:36:56,563 - INFO - Package 25 loaded onto Truck 3 at 1900-01-01 09:05:00
+2024-10-20 14:36:56,563 - DEBUG - Loaded package 25 onto Truck 3 with delayed load time 1900-01-01 09:05:00
+2024-10-20 14:36:56,563 - INFO - Package 28 loaded onto Truck 3 at 1900-01-01 09:05:00
+2024-10-20 14:36:56,563 - DEBUG - Loaded package 28 onto Truck 3 with delayed load time 1900-01-01 09:05:00
+2024-10-20 14:36:56,564 - INFO - Package 32 loaded onto Truck 3 at 1900-01-01 09:05:00
+2024-10-20 14:36:56,564 - DEBUG - Loaded package 32 onto Truck 3 with delayed load time 1900-01-01 09:05:00
+2024-10-20 14:36:56,564 - INFO - Package 36 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,565 - DEBUG - Loaded package 36 onto Truck 2
+2024-10-20 14:36:56,565 - INFO - Package 38 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,565 - DEBUG - Loaded package 38 onto Truck 2
+2024-10-20 14:36:56,565 - INFO - Package 13 loaded onto Truck 1 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,565 - DEBUG - Loaded package 13 onto Truck 1
+2024-10-20 14:36:56,565 - INFO - Package 14 loaded onto Truck 1 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,565 - DEBUG - Loaded package 14 onto Truck 1
+2024-10-20 14:36:56,565 - INFO - Package 15 loaded onto Truck 1 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,565 - DEBUG - Loaded package 15 onto Truck 1
+2024-10-20 14:36:56,565 - INFO - Package 16 loaded onto Truck 1 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,566 - DEBUG - Loaded package 16 onto Truck 1
+2024-10-20 14:36:56,566 - INFO - Package 19 loaded onto Truck 1 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,566 - DEBUG - Loaded package 19 onto Truck 1
+2024-10-20 14:36:56,566 - INFO - Package 20 loaded onto Truck 1 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,566 - DEBUG - Loaded package 20 onto Truck 1
+2024-10-20 14:36:56,568 - INFO - Package 1 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,568 - DEBUG - Loaded package 1 onto Truck 2
+2024-10-20 14:36:56,570 - INFO - Package 29 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,570 - DEBUG - Loaded package 29 onto Truck 2
+2024-10-20 14:36:56,573 - INFO - Package 30 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,574 - DEBUG - Loaded package 30 onto Truck 2
+2024-10-20 14:36:56,577 - INFO - Package 31 loaded onto Truck 1 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,577 - DEBUG - Loaded package 31 onto Truck 1
+2024-10-20 14:36:56,582 - INFO - Package 34 loaded onto Truck 1 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,582 - DEBUG - Loaded package 34 onto Truck 1
+2024-10-20 14:36:56,587 - INFO - Package 37 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,587 - DEBUG - Loaded package 37 onto Truck 2
+2024-10-20 14:36:56,592 - INFO - Package 40 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,592 - DEBUG - Loaded package 40 onto Truck 2
+2024-10-20 14:36:56,598 - INFO - Package 2 loaded onto Truck 3 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,598 - DEBUG - Loaded package 2 onto Truck 3
+2024-10-20 14:36:56,605 - INFO - Package 4 loaded onto Truck 3 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,605 - DEBUG - Loaded package 4 onto Truck 3
+2024-10-20 14:36:56,614 - INFO - Package 5 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,614 - DEBUG - Loaded package 5 onto Truck 2
+2024-10-20 14:36:56,618 - INFO - Package 7 loaded onto Truck 3 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,618 - DEBUG - Loaded package 7 onto Truck 3
+2024-10-20 14:36:56,625 - INFO - Package 8 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,625 - DEBUG - Loaded package 8 onto Truck 2
+2024-10-20 14:36:56,636 - INFO - Package 10 loaded onto Truck 3 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,636 - DEBUG - Loaded package 10 onto Truck 3
+2024-10-20 14:36:56,643 - INFO - Package 11 loaded onto Truck 1 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,643 - DEBUG - Loaded package 11 onto Truck 1
+2024-10-20 14:36:56,652 - INFO - Package 12 loaded onto Truck 3 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,652 - DEBUG - Loaded package 12 onto Truck 3
+2024-10-20 14:36:56,661 - INFO - Package 17 loaded onto Truck 3 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,661 - DEBUG - Loaded package 17 onto Truck 3
+2024-10-20 14:36:56,669 - INFO - Package 21 loaded onto Truck 3 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,669 - DEBUG - Loaded package 21 onto Truck 3
+2024-10-20 14:36:56,682 - INFO - Package 22 loaded onto Truck 1 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,682 - DEBUG - Loaded package 22 onto Truck 1
+2024-10-20 14:36:56,694 - INFO - Package 23 loaded onto Truck 1 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,695 - DEBUG - Loaded package 23 onto Truck 1
+2024-10-20 14:36:56,707 - INFO - Package 24 loaded onto Truck 1 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,707 - DEBUG - Loaded package 24 onto Truck 1
+2024-10-20 14:36:56,721 - INFO - Package 26 loaded onto Truck 1 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,721 - DEBUG - Loaded package 26 onto Truck 1
+2024-10-20 14:36:56,727 - INFO - Package 27 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,727 - DEBUG - Loaded package 27 onto Truck 2
+2024-10-20 14:36:56,737 - INFO - Package 33 loaded onto Truck 3 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,738 - DEBUG - Loaded package 33 onto Truck 3
+2024-10-20 14:36:56,744 - INFO - Package 35 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,744 - DEBUG - Loaded package 35 onto Truck 2
+2024-10-20 14:36:56,753 - INFO - Package 39 loaded onto Truck 2 at 1900-01-01 08:00:00
+2024-10-20 14:36:56,753 - DEBUG - Loaded package 39 onto Truck 2
+2024-10-20 14:36:56,753 - INFO - Finished assigning packages. Truck 1: 13 packages, Truck 2: 14 packages, Truck 3: 13 packages
+2024-10-20 14:36:56,754 - INFO - Optimizing routes for all trucks
+2024-10-20 14:36:56,754 - INFO - Calculating route for truck 1
+2024-10-20 14:36:56,754 - DEBUG - Finding nearest neighbor for truck 1
+2024-10-20 14:36:56,755 - DEBUG - Nearest package found: 14
+2024-10-20 14:36:56,756 - DEBUG - Added to route: Package 14, Distance: 1.9
+2024-10-20 14:36:56,756 - DEBUG - Finding nearest neighbor for truck 1
+2024-10-20 14:36:56,757 - DEBUG - Nearest package found: 20
+2024-10-20 14:36:56,758 - DEBUG - Added to route: Package 20, Distance: 4.1
+2024-10-20 14:36:56,758 - DEBUG - Finding nearest neighbor for truck 1
+2024-10-20 14:36:56,759 - DEBUG - Nearest package found: 15
+2024-10-20 14:36:56,760 - DEBUG - Added to route: Package 15, Distance: 6.2
+2024-10-20 14:36:56,760 - DEBUG - Finding nearest neighbor for truck 1
+2024-10-20 14:36:56,761 - DEBUG - Nearest package found: 16
+2024-10-20 14:36:56,761 - DEBUG - Added to route: Package 16, Distance: 0.0
+2024-10-20 14:36:56,762 - DEBUG - Finding nearest neighbor for truck 1
+2024-10-20 14:36:56,762 - DEBUG - Nearest package found: 34
+2024-10-20 14:36:56,763 - DEBUG - Added to route: Package 34, Distance: 0.0
+2024-10-20 14:36:56,763 - DEBUG - Finding nearest neighbor for truck 1
+2024-10-20 14:36:56,763 - DEBUG - Nearest package found: 31
+2024-10-20 14:36:56,764 - DEBUG - Added to route: Package 31, Distance: 5.0
+2024-10-20 14:36:56,764 - DEBUG - Finding nearest neighbor for truck 1
+2024-10-20 14:36:56,764 - DEBUG - Nearest package found: 13
+2024-10-20 14:36:56,765 - DEBUG - Added to route: Package 13, Distance: 5.8
+2024-10-20 14:36:56,765 - DEBUG - Finding nearest neighbor for truck 1
+2024-10-20 14:36:56,766 - DEBUG - Nearest package found: 19
+2024-10-20 14:36:56,766 - DEBUG - Added to route: Package 19, Distance: 7.9
+2024-10-20 14:36:56,766 - DEBUG - Finding nearest neighbor for truck 1
+2024-10-20 14:36:56,768 - DEBUG - Nearest package found: 24
+2024-10-20 14:36:56,768 - DEBUG - Added to route: Package 24, Distance: 2.5
+2024-10-20 14:36:56,768 - DEBUG - Finding nearest neighbor for truck 1
+2024-10-20 14:36:56,769 - DEBUG - Nearest package found: 26
+2024-10-20 14:36:56,770 - DEBUG - Added to route: Package 26, Distance: 1.7
+2024-10-20 14:36:56,770 - DEBUG - Finding nearest neighbor for truck 1
+2024-10-20 14:36:56,771 - DEBUG - Nearest package found: 22
+2024-10-20 14:36:56,771 - DEBUG - Added to route: Package 22, Distance: 8.3
+2024-10-20 14:36:56,771 - DEBUG - Finding nearest neighbor for truck 1
+2024-10-20 14:36:56,772 - DEBUG - Nearest package found: 11
+2024-10-20 14:36:56,772 - DEBUG - Added to route: Package 11, Distance: 6.8
+2024-10-20 14:36:56,773 - DEBUG - Finding nearest neighbor for truck 1
+2024-10-20 14:36:56,773 - DEBUG - Nearest package found: 23
+2024-10-20 14:36:56,773 - DEBUG - Added to route: Package 23, Distance: 0.4
+2024-10-20 14:36:56,774 - DEBUG - Added return to hub: Distance: 6.4
+2024-10-20 14:36:56,774 - INFO - Finished calculating route for truck 1. Total stops: 14
+2024-10-20 14:36:56,774 - INFO - Finished optimizing routes
+2024-10-20 14:36:56,774 - INFO - Optimizing routes for all trucks
+2024-10-20 14:36:56,774 - INFO - Calculating route for truck 2
+2024-10-20 14:36:56,774 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,775 - DEBUG - Nearest package found: 1
+2024-10-20 14:36:56,775 - DEBUG - Added to route: Package 1, Distance: 3.5
+2024-10-20 14:36:56,775 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,776 - DEBUG - Nearest package found: 40
+2024-10-20 14:36:56,777 - DEBUG - Added to route: Package 40, Distance: 1.1
+2024-10-20 14:36:56,777 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,777 - DEBUG - Nearest package found: 29
+2024-10-20 14:36:56,778 - DEBUG - Added to route: Package 29, Distance: 3.6
+2024-10-20 14:36:56,778 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,778 - DEBUG - Nearest package found: 37
+2024-10-20 14:36:56,779 - DEBUG - Added to route: Package 37, Distance: 4.3
+2024-10-20 14:36:56,779 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,779 - DEBUG - Nearest package found: 30
+2024-10-20 14:36:56,780 - DEBUG - Added to route: Package 30, Distance: 1.0
+2024-10-20 14:36:56,780 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,780 - DEBUG - Nearest package found: 38
+2024-10-20 14:36:56,781 - DEBUG - Added to route: Package 38, Distance: 1.0
+2024-10-20 14:36:56,781 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,782 - DEBUG - Nearest package found: 5
+2024-10-20 14:36:56,782 - DEBUG - Added to route: Package 5, Distance: 0.0
+2024-10-20 14:36:56,783 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,783 - DEBUG - Nearest package found: 27
+2024-10-20 14:36:56,784 - DEBUG - Added to route: Package 27, Distance: 4.8
+2024-10-20 14:36:56,784 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,784 - DEBUG - Nearest package found: 35
+2024-10-20 14:36:56,784 - DEBUG - Added to route: Package 35, Distance: 0.0
+2024-10-20 14:36:56,785 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,785 - DEBUG - Nearest package found: 3
+2024-10-20 14:36:56,786 - DEBUG - Added to route: Package 3, Distance: 4.8
+2024-10-20 14:36:56,786 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,786 - DEBUG - Nearest package found: 8
+2024-10-20 14:36:56,786 - DEBUG - Added to route: Package 8, Distance: 0.6
+2024-10-20 14:36:56,787 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,787 - DEBUG - Nearest package found: 36
+2024-10-20 14:36:56,787 - DEBUG - Added to route: Package 36, Distance: 7.7
+2024-10-20 14:36:56,787 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,788 - DEBUG - Nearest package found: 39
+2024-10-20 14:36:56,788 - DEBUG - Added to route: Package 39, Distance: 4.0
+2024-10-20 14:36:56,788 - DEBUG - Finding nearest neighbor for truck 2
+2024-10-20 14:36:56,788 - DEBUG - Nearest package found: 18
+2024-10-20 14:36:56,788 - DEBUG - Added to route: Package 18, Distance: 8.6
+2024-10-20 14:36:56,789 - DEBUG - Added return to hub: Distance: 11.0
+2024-10-20 14:36:56,789 - INFO - Finished calculating route for truck 2. Total stops: 15
+2024-10-20 14:36:56,789 - INFO - Finished optimizing routes
+2024-10-20 14:36:56,789 - INFO - Optimizing routes for all trucks
+2024-10-20 14:36:56,789 - INFO - Calculating route for truck 3
+2024-10-20 14:36:56,789 - DEBUG - Finding nearest neighbor for truck 3
+2024-10-20 14:36:56,789 - DEBUG - Nearest package found: 25
+2024-10-20 14:36:56,790 - DEBUG - Added to route: Package 25, Distance: 2.4
+2024-10-20 14:36:56,790 - DEBUG - Finding nearest neighbor for truck 3
+2024-10-20 14:36:56,790 - DEBUG - Nearest package found: 6
+2024-10-20 14:36:56,791 - DEBUG - Added to route: Package 6, Distance: 7.2
+2024-10-20 14:36:56,791 - DEBUG - Finding nearest neighbor for truck 3
+2024-10-20 14:36:56,793 - DEBUG - Nearest package found: 2
+2024-10-20 14:36:56,793 - DEBUG - Added to route: Package 2, Distance: 4.6
+2024-10-20 14:36:56,793 - DEBUG - Finding nearest neighbor for truck 3
+2024-10-20 14:36:56,795 - DEBUG - Nearest package found: 33
+2024-10-20 14:36:56,795 - DEBUG - Added to route: Package 33, Distance: 0.0
+2024-10-20 14:36:56,795 - DEBUG - Finding nearest neighbor for truck 3
+2024-10-20 14:36:56,797 - DEBUG - Nearest package found: 28
+2024-10-20 14:36:56,797 - DEBUG - Added to route: Package 28, Distance: 1.1
+2024-10-20 14:36:56,797 - DEBUG - Finding nearest neighbor for truck 3
+2024-10-20 14:36:56,798 - DEBUG - Nearest package found: 21
+2024-10-20 14:36:56,799 - DEBUG - Added to route: Package 21, Distance: 0.0
+2024-10-20 14:36:56,799 - DEBUG - Finding nearest neighbor for truck 3
+2024-10-20 14:36:56,800 - DEBUG - Nearest package found: 4
+2024-10-20 14:36:56,801 - DEBUG - Added to route: Package 4, Distance: 1.0
+2024-10-20 14:36:56,801 - DEBUG - Finding nearest neighbor for truck 3
+2024-10-20 14:36:56,802 - DEBUG - Nearest package found: 32
+2024-10-20 14:36:56,802 - DEBUG - Added to route: Package 32, Distance: 1.7
+2024-10-20 14:36:56,803 - DEBUG - Finding nearest neighbor for truck 3
+2024-10-20 14:36:56,803 - DEBUG - Nearest package found: 7
+2024-10-20 14:36:56,804 - DEBUG - Added to route: Package 7, Distance: 5.8
+2024-10-20 14:36:56,804 - DEBUG - Finding nearest neighbor for truck 3
+2024-10-20 14:36:56,805 - DEBUG - Nearest package found: 17
+2024-10-20 14:36:56,805 - DEBUG - Added to route: Package 17, Distance: 5.6
+2024-10-20 14:36:56,805 - DEBUG - Finding nearest neighbor for truck 3
+2024-10-20 14:36:56,806 - DEBUG - Nearest package found: 10
+2024-10-20 14:36:56,806 - DEBUG - Added to route: Package 10, Distance: 4.3
+2024-10-20 14:36:56,807 - DEBUG - Finding nearest neighbor for truck 3
+2024-10-20 14:36:56,807 - DEBUG - Nearest package found: 9
+2024-10-20 14:36:56,807 - DEBUG - Added to route: Package 9, Distance: 2.8
+2024-10-20 14:36:56,808 - DEBUG - Finding nearest neighbor for truck 3
+2024-10-20 14:36:56,808 - DEBUG - Nearest package found: 12
+2024-10-20 14:36:56,808 - DEBUG - Added to route: Package 12, Distance: 7.2
+2024-10-20 14:36:56,809 - DEBUG - Added return to hub: Distance: 7.6
+2024-10-20 14:36:56,809 - INFO - Finished calculating route for truck 3. Total stops: 14
+2024-10-20 14:36:56,809 - INFO - Finished optimizing routes
+2024-10-20 14:36:56,809 - INFO - Starting delivery simulation
+2024-10-20 14:36:56,809 - INFO - Package 14 delivered at 2024-10-20 08:12:40
+2024-10-20 14:36:56,809 - INFO - Delivered package 14 at 2024-10-20 08:12:40. New location: 00 S 1300 E, New mileage: 1.9
+2024-10-20 14:36:56,809 - INFO - Delivered package 14 at 2024-10-20 08:06:20. Distance: 1.9 miles, New location: 00 S 1300 E
+2024-10-20 14:36:56,809 - INFO - Package 1 delivered at 2024-10-20 08:29:40
+2024-10-20 14:36:56,809 - INFO - Delivered package 1 at 2024-10-20 08:29:40. New location: 5 W Oakland Ave, New mileage: 3.5
+2024-10-20 14:36:56,810 - INFO - Delivered package 1 at 2024-10-20 08:18:00. Distance: 3.5 miles, New location: 5 W Oakland Ave
+2024-10-20 14:36:56,810 - INFO - Package 20 delivered at 2024-10-20 08:45:20
+2024-10-20 14:36:56,810 - INFO - Delivered package 20 at 2024-10-20 08:45:20. New location: 95 Main St, New mileage: 6.0
+2024-10-20 14:36:56,810 - INFO - Delivered package 20 at 2024-10-20 08:31:40. Distance: 4.1 miles, New location: 95 Main St
+2024-10-20 14:36:56,810 - INFO - Package 40 delivered at 2024-10-20 08:39:00
+2024-10-20 14:36:56,810 - INFO - Delivered package 40 at 2024-10-20 08:39:00. New location: 0 W 2880 S, New mileage: 4.6
+2024-10-20 14:36:56,810 - INFO - Delivered package 40 at 2024-10-20 08:35:20. Distance: 1.1 miles, New location: 0 W 2880 S
+2024-10-20 14:36:56,810 - INFO - Package 15 delivered at 2024-10-20 09:16:40
+2024-10-20 14:36:56,810 - INFO - Delivered package 15 at 2024-10-20 09:16:40. New location: 80 S 2300 E, New mileage: 12.2
+2024-10-20 14:36:56,810 - INFO - Delivered package 15 at 2024-10-20 08:56:00. Distance: 6.2 miles, New location: 80 S 2300 E
+2024-10-20 14:36:56,811 - INFO - Package 29 delivered at 2024-10-20 09:20:00
+2024-10-20 14:36:56,811 - INFO - Delivered package 29 at 2024-10-20 09:20:00. New location: 30 2100 S, New mileage: 8.2
+2024-10-20 14:36:56,811 - INFO - Delivered package 29 at 2024-10-20 09:08:00. Distance: 3.6 miles, New location: 30 2100 S
+2024-10-20 14:36:56,811 - INFO - Package 16 delivered at 2024-10-20 09:08:00
+2024-10-20 14:36:56,811 - INFO - Delivered package 16 at 2024-10-20 09:08:00. New location: 80 S 2300 E, New mileage: 12.2
+2024-10-20 14:36:56,811 - INFO - Delivered package 16 at 2024-10-20 09:08:00. Distance: 0.0 miles, New location: 80 S 2300 E
+2024-10-20 14:36:56,811 - INFO - Package 37 delivered at 2024-10-20 09:36:40
+2024-10-20 14:36:56,811 - INFO - Delivered package 37 at 2024-10-20 09:36:40. New location: 0 S State St, New mileage: 12.5
+2024-10-20 14:36:56,811 - INFO - Delivered package 37 at 2024-10-20 09:22:20. Distance: 4.3 miles, New location: 0 S State St
+2024-10-20 14:36:56,812 - INFO - Package 34 delivered at 2024-10-20 09:22:20
+2024-10-20 14:36:56,812 - INFO - Delivered package 34 at 2024-10-20 09:22:20. New location: 80 S 2300 E, New mileage: 12.2
+2024-10-20 14:36:56,812 - INFO - Delivered package 34 at 2024-10-20 09:22:20. Distance: 0.0 miles, New location: 80 S 2300 E
+2024-10-20 14:36:56,812 - INFO - Package 30 delivered at 2024-10-20 09:29:00
+2024-10-20 14:36:56,812 - INFO - Delivered package 30 at 2024-10-20 09:29:00. New location: 0 State St, New mileage: 13.5
+2024-10-20 14:36:56,812 - INFO - Delivered package 30 at 2024-10-20 09:25:40. Distance: 1.0 miles, New location: 0 State St
+2024-10-20 14:36:56,812 - INFO - Package 31 delivered at 2024-10-20 09:59:00
+2024-10-20 14:36:56,812 - INFO - Delivered package 31 at 2024-10-20 09:59:00. New location: 65 S 900 W, New mileage: 17.2
+2024-10-20 14:36:56,812 - INFO - Delivered package 31 at 2024-10-20 09:42:20. Distance: 5.0 miles, New location: 65 S 900 W
+2024-10-20 14:36:56,812 - INFO - Package 38 delivered at 2024-10-20 09:49:00
+2024-10-20 14:36:56,812 - INFO - Delivered package 38 at 2024-10-20 09:49:00. New location: 0 S State St, New mileage: 14.5
+2024-10-20 14:36:56,813 - INFO - Delivered package 38 at 2024-10-20 09:45:40. Distance: 1.0 miles, New location: 0 S State St
+2024-10-20 14:36:56,813 - INFO - Package 13 delivered at 2024-10-20 10:24:20
+2024-10-20 14:36:56,813 - INFO - Delivered package 13 at 2024-10-20 10:24:20. New location: 10 W 500 S, New mileage: 23.0
+2024-10-20 14:36:56,813 - INFO - Delivered package 13 at 2024-10-20 10:05:00. Distance: 5.8 miles, New location: 10 W 500 S
+2024-10-20 14:36:56,813 - INFO - Package 5 delivered at 2024-10-20 10:05:00
+2024-10-20 14:36:56,813 - INFO - Delivered package 5 at 2024-10-20 10:05:00. New location: 0 S State St, New mileage: 14.5
+2024-10-20 14:36:56,813 - INFO - Delivered package 5 at 2024-10-20 10:05:00. Distance: 0.0 miles, New location: 0 S State St
+2024-10-20 14:36:56,813 - INFO - Package 19 delivered at 2024-10-20 10:57:40
+2024-10-20 14:36:56,813 - INFO - Delivered package 19 at 2024-10-20 10:57:40. New location: 7 W Price Ave, New mileage: 30.9
+2024-10-20 14:36:56,813 - INFO - Delivered package 19 at 2024-10-20 10:31:20. Distance: 7.9 miles, New location: 7 W Price Ave
+2024-10-20 14:36:56,814 - INFO - Package 27 delivered at 2024-10-20 11:03:20
+2024-10-20 14:36:56,814 - INFO - Delivered package 27 at 2024-10-20 11:03:20. New location: 60 Dalton Ave S, New mileage: 19.3
+2024-10-20 14:36:56,814 - INFO - Delivered package 27 at 2024-10-20 10:47:20. Distance: 4.8 miles, New location: 60 Dalton Ave S
+2024-10-20 14:36:56,814 - INFO - Package 24 delivered at 2024-10-20 11:04:00
+2024-10-20 14:36:56,814 - INFO - Delivered package 24 at 2024-10-20 11:04:00. New location: 25 State St, New mileage: 33.4
+2024-10-20 14:36:56,814 - INFO - Delivered package 24 at 2024-10-20 10:55:40. Distance: 2.5 miles, New location: 25 State St
+2024-10-20 14:36:56,814 - INFO - Package 35 delivered at 2024-10-20 10:55:40
+2024-10-20 14:36:56,814 - INFO - Delivered package 35 at 2024-10-20 10:55:40. New location: 60 Dalton Ave S, New mileage: 19.3
+2024-10-20 14:36:56,814 - INFO - Delivered package 35 at 2024-10-20 10:55:40. Distance: 0.0 miles, New location: 60 Dalton Ave S
+2024-10-20 14:36:56,814 - INFO - Package 26 delivered at 2024-10-20 11:07:00
+2024-10-20 14:36:56,815 - INFO - Delivered package 26 at 2024-10-20 11:07:00. New location: 83 South 900 East #104, New mileage: 35.1
+2024-10-20 14:36:56,815 - INFO - Delivered package 26 at 2024-10-20 11:01:20. Distance: 1.7 miles, New location: 83 South 900 East #104
+2024-10-20 14:36:56,815 - INFO - Package 3 delivered at 2024-10-20 11:33:20
+2024-10-20 14:36:56,815 - INFO - Delivered package 3 at 2024-10-20 11:33:20. New location: 3 Canyon Rd, New mileage: 24.1
+2024-10-20 14:36:56,815 - INFO - Delivered package 3 at 2024-10-20 11:17:20. Distance: 4.8 miles, New location: 3 Canyon Rd
+2024-10-20 14:36:56,815 - INFO - Package 22 delivered at 2024-10-20 12:12:40
+2024-10-20 14:36:56,815 - INFO - Delivered package 22 at 2024-10-20 12:12:40. New location: 51 South 900 East, New mileage: 43.400000000000006
+2024-10-20 14:36:56,816 - INFO - Delivered package 22 at 2024-10-20 11:45:00. Distance: 8.3 miles, New location: 51 South 900 East
+2024-10-20 14:36:56,816 - INFO - Package 8 delivered at 2024-10-20 11:49:00
+2024-10-20 14:36:56,816 - INFO - Delivered package 8 at 2024-10-20 11:49:00. New location: 0 State St, New mileage: 24.700000000000003
+2024-10-20 14:36:56,816 - INFO - Delivered package 8 at 2024-10-20 11:47:00. Distance: 0.6 miles, New location: 0 State St
+2024-10-20 14:36:56,816 - INFO - Package 11 delivered at 2024-10-20 12:32:20
+2024-10-20 14:36:56,816 - INFO - Delivered package 11 at 2024-10-20 12:32:20. New location: 00 Taylorsville Blvd, New mileage: 50.2
+2024-10-20 14:36:56,816 - INFO - Delivered package 11 at 2024-10-20 12:09:40. Distance: 6.8 miles, New location: 00 Taylorsville Blvd
+2024-10-20 14:36:56,816 - INFO - Package 36 delivered at 2024-10-20 13:01:00
+2024-10-20 14:36:56,816 - INFO - Delivered package 36 at 2024-10-20 13:01:00. New location: 00 Parkway Blvd, New mileage: 32.400000000000006
+2024-10-20 14:36:56,817 - INFO - Delivered package 36 at 2024-10-20 12:35:20. Distance: 7.7 miles, New location: 00 Parkway Blvd
+2024-10-20 14:36:56,817 - INFO - Package 23 delivered at 2024-10-20 12:38:00
+2024-10-20 14:36:56,817 - INFO - Delivered package 23 at 2024-10-20 12:38:00. New location: 00 South 2700 West, New mileage: 50.6
+2024-10-20 14:36:56,817 - INFO - Delivered package 23 at 2024-10-20 12:36:40. Distance: 0.4 miles, New location: 00 South 2700 West
+2024-10-20 14:36:56,817 - INFO - Package 39 delivered at 2024-10-20 13:03:20
+2024-10-20 14:36:56,817 - INFO - Delivered package 39 at 2024-10-20 13:03:20. New location: 10 W 500 S, New mileage: 36.400000000000006
+2024-10-20 14:36:56,817 - INFO - Delivered package 39 at 2024-10-20 12:50:00. Distance: 4.0 miles, New location: 10 W 500 S
+2024-10-20 14:36:56,817 - INFO - Truck 1 returned to HUB at 2024-10-20 13:32:40. Total mileage: 57.0
+2024-10-20 14:36:56,817 - INFO - Package 18 delivered at 2024-10-20 14:08:40
+2024-10-20 14:36:56,817 - INFO - Delivered package 18 at 2024-10-20 14:08:40. New location: 88 4800 S, New mileage: 45.00000000000001
+2024-10-20 14:36:56,817 - INFO - Delivered package 18 at 2024-10-20 13:40:00. Distance: 8.6 miles, New location: 88 4800 S
+2024-10-20 14:36:56,818 - INFO - Package 25 delivered at 2024-10-20 13:56:00
+2024-10-20 14:36:56,818 - INFO - Delivered package 25 at 2024-10-20 13:56:00. New location: 83 South 900 East #104, New mileage: 2.4
+2024-10-20 14:36:56,818 - INFO - Delivered package 25 at 2024-10-20 13:48:00. Distance: 2.4 miles, New location: 83 South 900 East #104
+2024-10-20 14:36:56,818 - INFO - Truck 2 returned to HUB at 2024-10-20 15:01:20. Total mileage: 56.00000000000001
+2024-10-20 14:36:56,818 - INFO - Package 6 delivered at 2024-10-20 15:12:40
+2024-10-20 14:36:56,818 - INFO - Delivered package 6 at 2024-10-20 15:12:40. New location: 60 Lester St, New mileage: 9.6
+2024-10-20 14:36:56,818 - INFO - Delivered package 6 at 2024-10-20 14:48:40. Distance: 7.2 miles, New location: 60 Lester St
+2024-10-20 14:36:56,818 - INFO - Package 2 delivered at 2024-10-20 15:19:20
+2024-10-20 14:36:56,818 - INFO - Delivered package 2 at 2024-10-20 15:19:20. New location: 30 S 500 E, New mileage: 14.2
+2024-10-20 14:36:56,818 - INFO - Delivered package 2 at 2024-10-20 15:04:00. Distance: 4.6 miles, New location: 30 S 500 E
+2024-10-20 14:36:56,819 - INFO - Package 33 delivered at 2024-10-20 15:04:00
+2024-10-20 14:36:56,819 - INFO - Delivered package 33 at 2024-10-20 15:04:00. New location: 30 S 500 E, New mileage: 14.2
+2024-10-20 14:36:56,819 - INFO - Delivered package 33 at 2024-10-20 15:04:00. Distance: 0.0 miles, New location: 30 S 500 E
+2024-10-20 14:36:56,819 - INFO - Package 28 delivered at 2024-10-20 15:11:20
+2024-10-20 14:36:56,819 - INFO - Delivered package 28 at 2024-10-20 15:11:20. New location: 35 Main St, New mileage: 15.299999999999999
+2024-10-20 14:36:56,819 - INFO - Delivered package 28 at 2024-10-20 15:07:40. Distance: 1.1 miles, New location: 35 Main St
+2024-10-20 14:36:56,819 - INFO - Package 21 delivered at 2024-10-20 15:07:40
+2024-10-20 14:36:56,819 - INFO - Delivered package 21 at 2024-10-20 15:07:40. New location: 95 Main St, New mileage: 15.299999999999999
+2024-10-20 14:36:56,819 - INFO - Delivered package 21 at 2024-10-20 15:07:40. Distance: 0.0 miles, New location: 95 Main St
+2024-10-20 14:36:56,820 - INFO - Package 4 delivered at 2024-10-20 15:14:20
+2024-10-20 14:36:56,820 - INFO - Delivered package 4 at 2024-10-20 15:14:20. New location: 0 W 2880 S, New mileage: 16.299999999999997
+2024-10-20 14:36:56,820 - INFO - Delivered package 4 at 2024-10-20 15:11:00. Distance: 1.0 miles, New location: 0 W 2880 S
+2024-10-20 14:36:56,820 - INFO - Package 32 delivered at 2024-10-20 15:22:20
+2024-10-20 14:36:56,820 - INFO - Delivered package 32 at 2024-10-20 15:22:20. New location: 65 S 900 W, New mileage: 17.999999999999996
+2024-10-20 14:36:56,820 - INFO - Delivered package 32 at 2024-10-20 15:16:40. Distance: 1.7 miles, New location: 65 S 900 W
+2024-10-20 14:36:56,820 - INFO - Package 7 delivered at 2024-10-20 15:55:20
+2024-10-20 14:36:56,820 - INFO - Delivered package 7 at 2024-10-20 15:55:20. New location: 30 2100 S, New mileage: 23.799999999999997
+2024-10-20 14:36:56,820 - INFO - Delivered package 7 at 2024-10-20 15:36:00. Distance: 5.8 miles, New location: 30 2100 S
+2024-10-20 14:36:56,820 - INFO - Package 17 delivered at 2024-10-20 16:13:20
+2024-10-20 14:36:56,821 - INFO - Delivered package 17 at 2024-10-20 16:13:20. New location: 48 S 1100 W, New mileage: 29.4
+2024-10-20 14:36:56,821 - INFO - Delivered package 17 at 2024-10-20 15:54:40. Distance: 5.6 miles, New location: 48 S 1100 W
+2024-10-20 14:36:56,821 - INFO - Package 10 delivered at 2024-10-20 16:23:20
+2024-10-20 14:36:56,821 - INFO - Delivered package 10 at 2024-10-20 16:23:20. New location: 0 E 900 South, New mileage: 33.699999999999996
+2024-10-20 14:36:56,821 - INFO - Delivered package 10 at 2024-10-20 16:09:00. Distance: 4.3 miles, New location: 0 E 900 South
+2024-10-20 14:36:56,821 - INFO - Package 9 delivered at 2024-10-20 16:27:40
+2024-10-20 14:36:56,821 - INFO - Delivered package 9 at 2024-10-20 16:27:40. New location: 0 State St, New mileage: 36.49999999999999
+2024-10-20 14:36:56,821 - INFO - Delivered package 9 at 2024-10-20 16:18:20. Distance: 2.8 miles, New location: 0 State St
+2024-10-20 14:36:56,821 - INFO - Package 12 delivered at 2024-10-20 17:06:20
+2024-10-20 14:36:56,822 - INFO - Delivered package 12 at 2024-10-20 17:06:20. New location: 75 W Valley Central Station Bus Loop, New mileage: 43.699999999999996
+2024-10-20 14:36:56,822 - INFO - Delivered package 12 at 2024-10-20 16:42:20. Distance: 7.2 miles, New location: 75 W Valley Central Station Bus Loop
+2024-10-20 14:36:56,822 - INFO - Truck 3 returned to HUB at 2024-10-20 17:33:00. Total mileage: 51.3
+2024-10-20 14:36:56,822 - INFO - Truck 1 finished at 2024-10-20 13:32:40, total mileage: 57.0
+Truck 1 finished at 2024-10-20 13:32:40, total mileage: 57.0
+2024-10-20 14:36:56,822 - INFO - Truck 2 finished at 2024-10-20 15:01:20, total mileage: 56.0
+Truck 2 finished at 2024-10-20 15:01:20, total mileage: 56.0
+2024-10-20 14:36:56,823 - INFO - Truck 3 finished at 2024-10-20 17:33:00, total mileage: 51.3
+Truck 3 finished at 2024-10-20 17:33:00, total mileage: 51.3
+2024-10-20 14:36:56,823 - INFO - Total mileage for all trucks: 164.3 miles
+Total mileage for all trucks: 164.3 miles
+2024-10-20 14:36:56,823 - INFO - Printing package status at 2024-10-20 09:00:00
+
+Package Status at 2024-10-20 09:00:00:
+2024-10-20 14:36:56,823 - DEBUG - Lookup successful for key 1
+2024-10-20 14:36:56,823 - DEBUG - Package 1 status at 2024-10-20 09:00:00: Delivered
+Package 1: Delivered
+2024-10-20 14:36:56,824 - DEBUG - Package 1 status: Delivered
+2024-10-20 14:36:56,824 - DEBUG - Lookup successful for key 2
+2024-10-20 14:36:56,824 - DEBUG - Package 2 status at 2024-10-20 09:00:00: En Route
+Package 2: En Route
+2024-10-20 14:36:56,824 - DEBUG - Package 2 status: En Route
+2024-10-20 14:36:56,824 - DEBUG - Lookup successful for key 3
+2024-10-20 14:36:56,824 - DEBUG - Package 3 status at 2024-10-20 09:00:00: En Route
+Package 3: En Route
+2024-10-20 14:36:56,824 - DEBUG - Package 3 status: En Route
+2024-10-20 14:36:56,824 - DEBUG - Lookup successful for key 4
+2024-10-20 14:36:56,824 - DEBUG - Package 4 status at 2024-10-20 09:00:00: En Route
+Package 4: En Route
+2024-10-20 14:36:56,825 - DEBUG - Package 4 status: En Route
+2024-10-20 14:36:56,825 - DEBUG - Lookup successful for key 5
+2024-10-20 14:36:56,825 - DEBUG - Package 5 status at 2024-10-20 09:00:00: En Route
+Package 5: En Route
+2024-10-20 14:36:56,825 - DEBUG - Package 5 status: En Route
+2024-10-20 14:36:56,825 - DEBUG - Lookup successful for key 6
+2024-10-20 14:36:56,825 - DEBUG - Package 6 status at 2024-10-20 09:00:00: En Route
+Package 6: En Route
+2024-10-20 14:36:56,825 - DEBUG - Package 6 status: En Route
+2024-10-20 14:36:56,826 - DEBUG - Lookup successful for key 7
+2024-10-20 14:36:56,826 - DEBUG - Package 7 status at 2024-10-20 09:00:00: En Route
+Package 7: En Route
+2024-10-20 14:36:56,826 - DEBUG - Package 7 status: En Route
+2024-10-20 14:36:56,826 - DEBUG - Lookup successful for key 8
+2024-10-20 14:36:56,826 - DEBUG - Package 8 status at 2024-10-20 09:00:00: En Route
+Package 8: En Route
+2024-10-20 14:36:56,826 - DEBUG - Package 8 status: En Route
+2024-10-20 14:36:56,826 - DEBUG - Lookup successful for key 9
+2024-10-20 14:36:56,826 - DEBUG - Package 9 status at 2024-10-20 09:00:00: En Route
+Package 9: En Route
+2024-10-20 14:36:56,827 - DEBUG - Package 9 status: En Route
+2024-10-20 14:36:56,827 - DEBUG - Lookup successful for key 10
+2024-10-20 14:36:56,827 - DEBUG - Package 10 status at 2024-10-20 09:00:00: En Route
+Package 10: En Route
+2024-10-20 14:36:56,827 - DEBUG - Package 10 status: En Route
+2024-10-20 14:36:56,827 - DEBUG - Lookup successful for key 11
+2024-10-20 14:36:56,827 - DEBUG - Package 11 status at 2024-10-20 09:00:00: En Route
+Package 11: En Route
+2024-10-20 14:36:56,827 - DEBUG - Package 11 status: En Route
+2024-10-20 14:36:56,827 - DEBUG - Lookup successful for key 12
+2024-10-20 14:36:56,827 - DEBUG - Package 12 status at 2024-10-20 09:00:00: En Route
+Package 12: En Route
+2024-10-20 14:36:56,827 - DEBUG - Package 12 status: En Route
+2024-10-20 14:36:56,828 - DEBUG - Lookup successful for key 13
+2024-10-20 14:36:56,828 - DEBUG - Package 13 status at 2024-10-20 09:00:00: En Route
+Package 13: En Route
+2024-10-20 14:36:56,828 - DEBUG - Package 13 status: En Route
+2024-10-20 14:36:56,828 - DEBUG - Lookup successful for key 14
+2024-10-20 14:36:56,828 - DEBUG - Package 14 status at 2024-10-20 09:00:00: Delivered
+Package 14: Delivered
+2024-10-20 14:36:56,828 - DEBUG - Package 14 status: Delivered
+2024-10-20 14:36:56,828 - DEBUG - Lookup successful for key 15
+2024-10-20 14:36:56,828 - DEBUG - Package 15 status at 2024-10-20 09:00:00: En Route
+Package 15: En Route
+2024-10-20 14:36:56,828 - DEBUG - Package 15 status: En Route
+2024-10-20 14:36:56,828 - DEBUG - Lookup successful for key 16
+2024-10-20 14:36:56,829 - DEBUG - Package 16 status at 2024-10-20 09:00:00: En Route
+Package 16: En Route
+2024-10-20 14:36:56,829 - DEBUG - Package 16 status: En Route
+2024-10-20 14:36:56,829 - DEBUG - Lookup successful for key 17
+2024-10-20 14:36:56,829 - DEBUG - Package 17 status at 2024-10-20 09:00:00: En Route
+Package 17: En Route
+2024-10-20 14:36:56,829 - DEBUG - Package 17 status: En Route
+2024-10-20 14:36:56,829 - DEBUG - Lookup successful for key 18
+2024-10-20 14:36:56,829 - DEBUG - Package 18 status at 2024-10-20 09:00:00: En Route
+Package 18: En Route
+2024-10-20 14:36:56,830 - DEBUG - Package 18 status: En Route
+2024-10-20 14:36:56,830 - DEBUG - Lookup successful for key 19
+2024-10-20 14:36:56,830 - DEBUG - Package 19 status at 2024-10-20 09:00:00: En Route
+Package 19: En Route
+2024-10-20 14:36:56,830 - DEBUG - Package 19 status: En Route
+2024-10-20 14:36:56,830 - DEBUG - Lookup successful for key 20
+2024-10-20 14:36:56,830 - DEBUG - Package 20 status at 2024-10-20 09:00:00: Delivered
+Package 20: Delivered
+2024-10-20 14:36:56,830 - DEBUG - Package 20 status: Delivered
+2024-10-20 14:36:56,830 - DEBUG - Lookup successful for key 21
+2024-10-20 14:36:56,831 - DEBUG - Package 21 status at 2024-10-20 09:00:00: En Route
+Package 21: En Route
+2024-10-20 14:36:56,831 - DEBUG - Package 21 status: En Route
+2024-10-20 14:36:56,831 - DEBUG - Lookup successful for key 22
+2024-10-20 14:36:56,831 - DEBUG - Package 22 status at 2024-10-20 09:00:00: En Route
+Package 22: En Route
+2024-10-20 14:36:56,831 - DEBUG - Package 22 status: En Route
+2024-10-20 14:36:56,831 - DEBUG - Lookup successful for key 23
+2024-10-20 14:36:56,831 - DEBUG - Package 23 status at 2024-10-20 09:00:00: En Route
+Package 23: En Route
+2024-10-20 14:36:56,831 - DEBUG - Package 23 status: En Route
+2024-10-20 14:36:56,831 - DEBUG - Lookup successful for key 24
+2024-10-20 14:36:56,832 - DEBUG - Package 24 status at 2024-10-20 09:00:00: En Route
+Package 24: En Route
+2024-10-20 14:36:56,832 - DEBUG - Package 24 status: En Route
+2024-10-20 14:36:56,832 - DEBUG - Lookup successful for key 25
+2024-10-20 14:36:56,832 - DEBUG - Package 25 status at 2024-10-20 09:00:00: En Route
+Package 25: En Route
+2024-10-20 14:36:56,832 - DEBUG - Package 25 status: En Route
+2024-10-20 14:36:56,832 - DEBUG - Lookup successful for key 26
+2024-10-20 14:36:56,832 - DEBUG - Package 26 status at 2024-10-20 09:00:00: En Route
+Package 26: En Route
+2024-10-20 14:36:56,832 - DEBUG - Package 26 status: En Route
+2024-10-20 14:36:56,832 - DEBUG - Lookup successful for key 27
+2024-10-20 14:36:56,833 - DEBUG - Package 27 status at 2024-10-20 09:00:00: En Route
+Package 27: En Route
+2024-10-20 14:36:56,833 - DEBUG - Package 27 status: En Route
+2024-10-20 14:36:56,833 - DEBUG - Lookup successful for key 28
+2024-10-20 14:36:56,833 - DEBUG - Package 28 status at 2024-10-20 09:00:00: En Route
+Package 28: En Route
+2024-10-20 14:36:56,833 - DEBUG - Package 28 status: En Route
+2024-10-20 14:36:56,833 - DEBUG - Lookup successful for key 29
+2024-10-20 14:36:56,833 - DEBUG - Package 29 status at 2024-10-20 09:00:00: En Route
+Package 29: En Route
+2024-10-20 14:36:56,833 - DEBUG - Package 29 status: En Route
+2024-10-20 14:36:56,833 - DEBUG - Lookup successful for key 30
+2024-10-20 14:36:56,834 - DEBUG - Package 30 status at 2024-10-20 09:00:00: En Route
+Package 30: En Route
+2024-10-20 14:36:56,834 - DEBUG - Package 30 status: En Route
+2024-10-20 14:36:56,834 - DEBUG - Lookup successful for key 31
+2024-10-20 14:36:56,834 - DEBUG - Package 31 status at 2024-10-20 09:00:00: En Route
+Package 31: En Route
+2024-10-20 14:36:56,835 - DEBUG - Package 31 status: En Route
+2024-10-20 14:36:56,835 - DEBUG - Lookup successful for key 32
+2024-10-20 14:36:56,835 - DEBUG - Package 32 status at 2024-10-20 09:00:00: En Route
+Package 32: En Route
+2024-10-20 14:36:56,835 - DEBUG - Package 32 status: En Route
+2024-10-20 14:36:56,835 - DEBUG - Lookup successful for key 33
+2024-10-20 14:36:56,835 - DEBUG - Package 33 status at 2024-10-20 09:00:00: En Route
+Package 33: En Route
+2024-10-20 14:36:56,835 - DEBUG - Package 33 status: En Route
+2024-10-20 14:36:56,835 - DEBUG - Lookup successful for key 34
+2024-10-20 14:36:56,835 - DEBUG - Package 34 status at 2024-10-20 09:00:00: En Route
+Package 34: En Route
+2024-10-20 14:36:56,836 - DEBUG - Package 34 status: En Route
+2024-10-20 14:36:56,836 - DEBUG - Lookup successful for key 35
+2024-10-20 14:36:56,836 - DEBUG - Package 35 status at 2024-10-20 09:00:00: En Route
+Package 35: En Route
+2024-10-20 14:36:56,836 - DEBUG - Package 35 status: En Route
+2024-10-20 14:36:56,836 - DEBUG - Lookup successful for key 36
+2024-10-20 14:36:56,836 - DEBUG - Package 36 status at 2024-10-20 09:00:00: En Route
+Package 36: En Route
+2024-10-20 14:36:56,836 - DEBUG - Package 36 status: En Route
+2024-10-20 14:36:56,836 - DEBUG - Lookup successful for key 37
+2024-10-20 14:36:56,837 - DEBUG - Package 37 status at 2024-10-20 09:00:00: En Route
+Package 37: En Route
+2024-10-20 14:36:56,837 - DEBUG - Package 37 status: En Route
+2024-10-20 14:36:56,837 - DEBUG - Lookup successful for key 38
+2024-10-20 14:36:56,837 - DEBUG - Package 38 status at 2024-10-20 09:00:00: En Route
+Package 38: En Route
+2024-10-20 14:36:56,837 - DEBUG - Package 38 status: En Route
+2024-10-20 14:36:56,837 - DEBUG - Lookup successful for key 39
+2024-10-20 14:36:56,837 - DEBUG - Package 39 status at 2024-10-20 09:00:00: En Route
+Package 39: En Route
+2024-10-20 14:36:56,837 - DEBUG - Package 39 status: En Route
+2024-10-20 14:36:56,837 - DEBUG - Lookup successful for key 40
+2024-10-20 14:36:56,838 - DEBUG - Package 40 status at 2024-10-20 09:00:00: Delivered
+Package 40: Delivered
+2024-10-20 14:36:56,838 - DEBUG - Package 40 status: Delivered
+2024-10-20 14:36:56,838 - INFO - Printing package status at 2024-10-20 10:00:00
+
+Package Status at 2024-10-20 10:00:00:
+2024-10-20 14:36:56,838 - DEBUG - Lookup successful for key 1
+2024-10-20 14:36:56,838 - DEBUG - Package 1 status at 2024-10-20 10:00:00: Delivered
+Package 1: Delivered
+2024-10-20 14:36:56,838 - DEBUG - Package 1 status: Delivered
+2024-10-20 14:36:56,838 - DEBUG - Lookup successful for key 2
+2024-10-20 14:36:56,838 - DEBUG - Package 2 status at 2024-10-20 10:00:00: En Route
+Package 2: En Route
+2024-10-20 14:36:56,839 - DEBUG - Package 2 status: En Route
+2024-10-20 14:36:56,839 - DEBUG - Lookup successful for key 3
+2024-10-20 14:36:56,839 - DEBUG - Package 3 status at 2024-10-20 10:00:00: En Route
+Package 3: En Route
+2024-10-20 14:36:56,839 - DEBUG - Package 3 status: En Route
+2024-10-20 14:36:56,839 - DEBUG - Lookup successful for key 4
+2024-10-20 14:36:56,839 - DEBUG - Package 4 status at 2024-10-20 10:00:00: En Route
+Package 4: En Route
+2024-10-20 14:36:56,839 - DEBUG - Package 4 status: En Route
+2024-10-20 14:36:56,839 - DEBUG - Lookup successful for key 5
+2024-10-20 14:36:56,840 - DEBUG - Package 5 status at 2024-10-20 10:00:00: En Route
+Package 5: En Route
+2024-10-20 14:36:56,840 - DEBUG - Package 5 status: En Route
+2024-10-20 14:36:56,840 - DEBUG - Lookup successful for key 6
+2024-10-20 14:36:56,840 - DEBUG - Package 6 status at 2024-10-20 10:00:00: En Route
+Package 6: En Route
+2024-10-20 14:36:56,840 - DEBUG - Package 6 status: En Route
+2024-10-20 14:36:56,840 - DEBUG - Lookup successful for key 7
+2024-10-20 14:36:56,840 - DEBUG - Package 7 status at 2024-10-20 10:00:00: En Route
+Package 7: En Route
+2024-10-20 14:36:56,841 - DEBUG - Package 7 status: En Route
+2024-10-20 14:36:56,841 - DEBUG - Lookup successful for key 8
+2024-10-20 14:36:56,841 - DEBUG - Package 8 status at 2024-10-20 10:00:00: En Route
+Package 8: En Route
+2024-10-20 14:36:56,841 - DEBUG - Package 8 status: En Route
+2024-10-20 14:36:56,841 - DEBUG - Lookup successful for key 9
+2024-10-20 14:36:56,841 - DEBUG - Package 9 status at 2024-10-20 10:00:00: En Route
+Package 9: En Route
+2024-10-20 14:36:56,841 - DEBUG - Package 9 status: En Route
+2024-10-20 14:36:56,842 - DEBUG - Lookup successful for key 10
+2024-10-20 14:36:56,842 - DEBUG - Package 10 status at 2024-10-20 10:00:00: En Route
+Package 10: En Route
+2024-10-20 14:36:56,842 - DEBUG - Package 10 status: En Route
+2024-10-20 14:36:56,842 - DEBUG - Lookup successful for key 11
+2024-10-20 14:36:56,842 - DEBUG - Package 11 status at 2024-10-20 10:00:00: En Route
+Package 11: En Route
+2024-10-20 14:36:56,842 - DEBUG - Package 11 status: En Route
+2024-10-20 14:36:56,842 - DEBUG - Lookup successful for key 12
+2024-10-20 14:36:56,842 - DEBUG - Package 12 status at 2024-10-20 10:00:00: En Route
+Package 12: En Route
+2024-10-20 14:36:56,843 - DEBUG - Package 12 status: En Route
+2024-10-20 14:36:56,843 - DEBUG - Lookup successful for key 13
+2024-10-20 14:36:56,843 - DEBUG - Package 13 status at 2024-10-20 10:00:00: En Route
+Package 13: En Route
+2024-10-20 14:36:56,843 - DEBUG - Package 13 status: En Route
+2024-10-20 14:36:56,843 - DEBUG - Lookup successful for key 14
+2024-10-20 14:36:56,843 - DEBUG - Package 14 status at 2024-10-20 10:00:00: Delivered
+Package 14: Delivered
+2024-10-20 14:36:56,843 - DEBUG - Package 14 status: Delivered
+2024-10-20 14:36:56,843 - DEBUG - Lookup successful for key 15
+2024-10-20 14:36:56,843 - DEBUG - Package 15 status at 2024-10-20 10:00:00: Delivered
+Package 15: Delivered
+2024-10-20 14:36:56,843 - DEBUG - Package 15 status: Delivered
+2024-10-20 14:36:56,844 - DEBUG - Lookup successful for key 16
+2024-10-20 14:36:56,844 - DEBUG - Package 16 status at 2024-10-20 10:00:00: Delivered
+Package 16: Delivered
+2024-10-20 14:36:56,844 - DEBUG - Package 16 status: Delivered
+2024-10-20 14:36:56,844 - DEBUG - Lookup successful for key 17
+2024-10-20 14:36:56,844 - DEBUG - Package 17 status at 2024-10-20 10:00:00: En Route
+Package 17: En Route
+2024-10-20 14:36:56,844 - DEBUG - Package 17 status: En Route
+2024-10-20 14:36:56,844 - DEBUG - Lookup successful for key 18
+2024-10-20 14:36:56,844 - DEBUG - Package 18 status at 2024-10-20 10:00:00: En Route
+Package 18: En Route
+2024-10-20 14:36:56,844 - DEBUG - Package 18 status: En Route
+2024-10-20 14:36:56,844 - DEBUG - Lookup successful for key 19
+2024-10-20 14:36:56,845 - DEBUG - Package 19 status at 2024-10-20 10:00:00: En Route
+Package 19: En Route
+2024-10-20 14:36:56,845 - DEBUG - Package 19 status: En Route
+2024-10-20 14:36:56,845 - DEBUG - Lookup successful for key 20
+2024-10-20 14:36:56,845 - DEBUG - Package 20 status at 2024-10-20 10:00:00: Delivered
+Package 20: Delivered
+2024-10-20 14:36:56,845 - DEBUG - Package 20 status: Delivered
+2024-10-20 14:36:56,845 - DEBUG - Lookup successful for key 21
+2024-10-20 14:36:56,845 - DEBUG - Package 21 status at 2024-10-20 10:00:00: En Route
+Package 21: En Route
+2024-10-20 14:36:56,845 - DEBUG - Package 21 status: En Route
+2024-10-20 14:36:56,845 - DEBUG - Lookup successful for key 22
+2024-10-20 14:36:56,846 - DEBUG - Package 22 status at 2024-10-20 10:00:00: En Route
+Package 22: En Route
+2024-10-20 14:36:56,846 - DEBUG - Package 22 status: En Route
+2024-10-20 14:36:56,846 - DEBUG - Lookup successful for key 23
+2024-10-20 14:36:56,846 - DEBUG - Package 23 status at 2024-10-20 10:00:00: En Route
+Package 23: En Route
+2024-10-20 14:36:56,846 - DEBUG - Package 23 status: En Route
+2024-10-20 14:36:56,846 - DEBUG - Lookup successful for key 24
+2024-10-20 14:36:56,846 - DEBUG - Package 24 status at 2024-10-20 10:00:00: En Route
+Package 24: En Route
+2024-10-20 14:36:56,846 - DEBUG - Package 24 status: En Route
+2024-10-20 14:36:56,847 - DEBUG - Lookup successful for key 25
+2024-10-20 14:36:56,847 - DEBUG - Package 25 status at 2024-10-20 10:00:00: En Route
+Package 25: En Route
+2024-10-20 14:36:56,847 - DEBUG - Package 25 status: En Route
+2024-10-20 14:36:56,847 - DEBUG - Lookup successful for key 26
+2024-10-20 14:36:56,847 - DEBUG - Package 26 status at 2024-10-20 10:00:00: En Route
+Package 26: En Route
+2024-10-20 14:36:56,847 - DEBUG - Package 26 status: En Route
+2024-10-20 14:36:56,847 - DEBUG - Lookup successful for key 27
+2024-10-20 14:36:56,847 - DEBUG - Package 27 status at 2024-10-20 10:00:00: En Route
+Package 27: En Route
+2024-10-20 14:36:56,847 - DEBUG - Package 27 status: En Route
+2024-10-20 14:36:56,848 - DEBUG - Lookup successful for key 28
+2024-10-20 14:36:56,848 - DEBUG - Package 28 status at 2024-10-20 10:00:00: En Route
+Package 28: En Route
+2024-10-20 14:36:56,848 - DEBUG - Package 28 status: En Route
+2024-10-20 14:36:56,848 - DEBUG - Lookup successful for key 29
+2024-10-20 14:36:56,848 - DEBUG - Package 29 status at 2024-10-20 10:00:00: Delivered
+Package 29: Delivered
+2024-10-20 14:36:56,848 - DEBUG - Package 29 status: Delivered
+2024-10-20 14:36:56,848 - DEBUG - Lookup successful for key 30
+2024-10-20 14:36:56,848 - DEBUG - Package 30 status at 2024-10-20 10:00:00: Delivered
+Package 30: Delivered
+2024-10-20 14:36:56,849 - DEBUG - Package 30 status: Delivered
+2024-10-20 14:36:56,849 - DEBUG - Lookup successful for key 31
+2024-10-20 14:36:56,849 - DEBUG - Package 31 status at 2024-10-20 10:00:00: Delivered
+Package 31: Delivered
+2024-10-20 14:36:56,849 - DEBUG - Package 31 status: Delivered
+2024-10-20 14:36:56,849 - DEBUG - Lookup successful for key 32
+2024-10-20 14:36:56,849 - DEBUG - Package 32 status at 2024-10-20 10:00:00: En Route
+Package 32: En Route
+2024-10-20 14:36:56,849 - DEBUG - Package 32 status: En Route
+2024-10-20 14:36:56,849 - DEBUG - Lookup successful for key 33
+2024-10-20 14:36:56,849 - DEBUG - Package 33 status at 2024-10-20 10:00:00: En Route
+Package 33: En Route
+2024-10-20 14:36:56,849 - DEBUG - Package 33 status: En Route
+2024-10-20 14:36:56,850 - DEBUG - Lookup successful for key 34
+2024-10-20 14:36:56,850 - DEBUG - Package 34 status at 2024-10-20 10:00:00: Delivered
+Package 34: Delivered
+2024-10-20 14:36:56,850 - DEBUG - Package 34 status: Delivered
+2024-10-20 14:36:56,850 - DEBUG - Lookup successful for key 35
+2024-10-20 14:36:56,850 - DEBUG - Package 35 status at 2024-10-20 10:00:00: En Route
+Package 35: En Route
+2024-10-20 14:36:56,850 - DEBUG - Package 35 status: En Route
+2024-10-20 14:36:56,850 - DEBUG - Lookup successful for key 36
+2024-10-20 14:36:56,850 - DEBUG - Package 36 status at 2024-10-20 10:00:00: En Route
+Package 36: En Route
+2024-10-20 14:36:56,851 - DEBUG - Package 36 status: En Route
+2024-10-20 14:36:56,851 - DEBUG - Lookup successful for key 37
+2024-10-20 14:36:56,851 - DEBUG - Package 37 status at 2024-10-20 10:00:00: Delivered
+Package 37: Delivered
+2024-10-20 14:36:56,851 - DEBUG - Package 37 status: Delivered
+2024-10-20 14:36:56,851 - DEBUG - Lookup successful for key 38
+2024-10-20 14:36:56,851 - DEBUG - Package 38 status at 2024-10-20 10:00:00: Delivered
+Package 38: Delivered
+2024-10-20 14:36:56,851 - DEBUG - Package 38 status: Delivered
+2024-10-20 14:36:56,852 - DEBUG - Lookup successful for key 39
+2024-10-20 14:36:56,852 - DEBUG - Package 39 status at 2024-10-20 10:00:00: En Route
+Package 39: En Route
+2024-10-20 14:36:56,852 - DEBUG - Package 39 status: En Route
+2024-10-20 14:36:56,852 - DEBUG - Lookup successful for key 40
+2024-10-20 14:36:56,852 - DEBUG - Package 40 status at 2024-10-20 10:00:00: Delivered
+Package 40: Delivered
+2024-10-20 14:36:56,852 - DEBUG - Package 40 status: Delivered
+2024-10-20 14:36:56,852 - INFO - Printing package status at 2024-10-20 13:00:00
+
+Package Status at 2024-10-20 13:00:00:
+2024-10-20 14:36:56,853 - DEBUG - Lookup successful for key 1
+2024-10-20 14:36:56,853 - DEBUG - Package 1 status at 2024-10-20 13:00:00: Delivered
+Package 1: Delivered
+2024-10-20 14:36:56,853 - DEBUG - Package 1 status: Delivered
+2024-10-20 14:36:56,853 - DEBUG - Lookup successful for key 2
+2024-10-20 14:36:56,853 - DEBUG - Package 2 status at 2024-10-20 13:00:00: En Route
+Package 2: En Route
+2024-10-20 14:36:56,853 - DEBUG - Package 2 status: En Route
+2024-10-20 14:36:56,853 - DEBUG - Lookup successful for key 3
+2024-10-20 14:36:56,853 - DEBUG - Package 3 status at 2024-10-20 13:00:00: Delivered
+Package 3: Delivered
+2024-10-20 14:36:56,853 - DEBUG - Package 3 status: Delivered
+2024-10-20 14:36:56,854 - DEBUG - Lookup successful for key 4
+2024-10-20 14:36:56,854 - DEBUG - Package 4 status at 2024-10-20 13:00:00: En Route
+Package 4: En Route
+2024-10-20 14:36:56,854 - DEBUG - Package 4 status: En Route
+2024-10-20 14:36:56,854 - DEBUG - Lookup successful for key 5
+2024-10-20 14:36:56,854 - DEBUG - Package 5 status at 2024-10-20 13:00:00: Delivered
+Package 5: Delivered
+2024-10-20 14:36:56,854 - DEBUG - Package 5 status: Delivered
+2024-10-20 14:36:56,854 - DEBUG - Lookup successful for key 6
+2024-10-20 14:36:56,854 - DEBUG - Package 6 status at 2024-10-20 13:00:00: En Route
+Package 6: En Route
+2024-10-20 14:36:56,855 - DEBUG - Package 6 status: En Route
+2024-10-20 14:36:56,855 - DEBUG - Lookup successful for key 7
+2024-10-20 14:36:56,855 - DEBUG - Package 7 status at 2024-10-20 13:00:00: En Route
+Package 7: En Route
+2024-10-20 14:36:56,855 - DEBUG - Package 7 status: En Route
+2024-10-20 14:36:56,855 - DEBUG - Lookup successful for key 8
+2024-10-20 14:36:56,855 - DEBUG - Package 8 status at 2024-10-20 13:00:00: Delivered
+Package 8: Delivered
+2024-10-20 14:36:56,855 - DEBUG - Package 8 status: Delivered
+2024-10-20 14:36:56,855 - DEBUG - Lookup successful for key 9
+2024-10-20 14:36:56,855 - DEBUG - Package 9 status at 2024-10-20 13:00:00: En Route
+Package 9: En Route
+2024-10-20 14:36:56,856 - DEBUG - Package 9 status: En Route
+2024-10-20 14:36:56,856 - DEBUG - Lookup successful for key 10
+2024-10-20 14:36:56,856 - DEBUG - Package 10 status at 2024-10-20 13:00:00: En Route
+Package 10: En Route
+2024-10-20 14:36:56,856 - DEBUG - Package 10 status: En Route
+2024-10-20 14:36:56,856 - DEBUG - Lookup successful for key 11
+2024-10-20 14:36:56,856 - DEBUG - Package 11 status at 2024-10-20 13:00:00: Delivered
+Package 11: Delivered
+2024-10-20 14:36:56,856 - DEBUG - Package 11 status: Delivered
+2024-10-20 14:36:56,857 - DEBUG - Lookup successful for key 12
+2024-10-20 14:36:56,857 - DEBUG - Package 12 status at 2024-10-20 13:00:00: En Route
+Package 12: En Route
+2024-10-20 14:36:56,857 - DEBUG - Package 12 status: En Route
+2024-10-20 14:36:56,857 - DEBUG - Lookup successful for key 13
+2024-10-20 14:36:56,857 - DEBUG - Package 13 status at 2024-10-20 13:00:00: Delivered
+Package 13: Delivered
+2024-10-20 14:36:56,857 - DEBUG - Package 13 status: Delivered
+2024-10-20 14:36:56,857 - DEBUG - Lookup successful for key 14
+2024-10-20 14:36:56,857 - DEBUG - Package 14 status at 2024-10-20 13:00:00: Delivered
+Package 14: Delivered
+2024-10-20 14:36:56,857 - DEBUG - Package 14 status: Delivered
+2024-10-20 14:36:56,857 - DEBUG - Lookup successful for key 15
+2024-10-20 14:36:56,858 - DEBUG - Package 15 status at 2024-10-20 13:00:00: Delivered
+Package 15: Delivered
+2024-10-20 14:36:56,858 - DEBUG - Package 15 status: Delivered
+2024-10-20 14:36:56,858 - DEBUG - Lookup successful for key 16
+2024-10-20 14:36:56,858 - DEBUG - Package 16 status at 2024-10-20 13:00:00: Delivered
+Package 16: Delivered
+2024-10-20 14:36:56,858 - DEBUG - Package 16 status: Delivered
+2024-10-20 14:36:56,858 - DEBUG - Lookup successful for key 17
+2024-10-20 14:36:56,858 - DEBUG - Package 17 status at 2024-10-20 13:00:00: En Route
+Package 17: En Route
+2024-10-20 14:36:56,858 - DEBUG - Package 17 status: En Route
+2024-10-20 14:36:56,858 - DEBUG - Lookup successful for key 18
+2024-10-20 14:36:56,858 - DEBUG - Package 18 status at 2024-10-20 13:00:00: En Route
+Package 18: En Route
+2024-10-20 14:36:56,859 - DEBUG - Package 18 status: En Route
+2024-10-20 14:36:56,859 - DEBUG - Lookup successful for key 19
+2024-10-20 14:36:56,859 - DEBUG - Package 19 status at 2024-10-20 13:00:00: Delivered
+Package 19: Delivered
+2024-10-20 14:36:56,859 - DEBUG - Package 19 status: Delivered
+2024-10-20 14:36:56,859 - DEBUG - Lookup successful for key 20
+2024-10-20 14:36:56,859 - DEBUG - Package 20 status at 2024-10-20 13:00:00: Delivered
+Package 20: Delivered
+2024-10-20 14:36:56,859 - DEBUG - Package 20 status: Delivered
+2024-10-20 14:36:56,859 - DEBUG - Lookup successful for key 21
+2024-10-20 14:36:56,859 - DEBUG - Package 21 status at 2024-10-20 13:00:00: En Route
+Package 21: En Route
+2024-10-20 14:36:56,860 - DEBUG - Package 21 status: En Route
+2024-10-20 14:36:56,860 - DEBUG - Lookup successful for key 22
+2024-10-20 14:36:56,860 - DEBUG - Package 22 status at 2024-10-20 13:00:00: Delivered
+Package 22: Delivered
+2024-10-20 14:36:56,860 - DEBUG - Package 22 status: Delivered
+2024-10-20 14:36:56,860 - DEBUG - Lookup successful for key 23
+2024-10-20 14:36:56,860 - DEBUG - Package 23 status at 2024-10-20 13:00:00: Delivered
+Package 23: Delivered
+2024-10-20 14:36:56,860 - DEBUG - Package 23 status: Delivered
+2024-10-20 14:36:56,860 - DEBUG - Lookup successful for key 24
+2024-10-20 14:36:56,861 - DEBUG - Package 24 status at 2024-10-20 13:00:00: Delivered
+Package 24: Delivered
+2024-10-20 14:36:56,861 - DEBUG - Package 24 status: Delivered
+2024-10-20 14:36:56,861 - DEBUG - Lookup successful for key 25
+2024-10-20 14:36:56,861 - DEBUG - Package 25 status at 2024-10-20 13:00:00: En Route
+Package 25: En Route
+2024-10-20 14:36:56,861 - DEBUG - Package 25 status: En Route
+2024-10-20 14:36:56,861 - DEBUG - Lookup successful for key 26
+2024-10-20 14:36:56,861 - DEBUG - Package 26 status at 2024-10-20 13:00:00: Delivered
+Package 26: Delivered
+2024-10-20 14:36:56,861 - DEBUG - Package 26 status: Delivered
+2024-10-20 14:36:56,862 - DEBUG - Lookup successful for key 27
+2024-10-20 14:36:56,862 - DEBUG - Package 27 status at 2024-10-20 13:00:00: Delivered
+Package 27: Delivered
+2024-10-20 14:36:56,862 - DEBUG - Package 27 status: Delivered
+2024-10-20 14:36:56,862 - DEBUG - Lookup successful for key 28
+2024-10-20 14:36:56,862 - DEBUG - Package 28 status at 2024-10-20 13:00:00: En Route
+Package 28: En Route
+2024-10-20 14:36:56,862 - DEBUG - Package 28 status: En Route
+2024-10-20 14:36:56,862 - DEBUG - Lookup successful for key 29
+2024-10-20 14:36:56,863 - DEBUG - Package 29 status at 2024-10-20 13:00:00: Delivered
+Package 29: Delivered
+2024-10-20 14:36:56,863 - DEBUG - Package 29 status: Delivered
+2024-10-20 14:36:56,863 - DEBUG - Lookup successful for key 30
+2024-10-20 14:36:56,863 - DEBUG - Package 30 status at 2024-10-20 13:00:00: Delivered
+Package 30: Delivered
+2024-10-20 14:36:56,863 - DEBUG - Package 30 status: Delivered
+2024-10-20 14:36:56,863 - DEBUG - Lookup successful for key 31
+2024-10-20 14:36:56,863 - DEBUG - Package 31 status at 2024-10-20 13:00:00: Delivered
+Package 31: Delivered
+2024-10-20 14:36:56,863 - DEBUG - Package 31 status: Delivered
+2024-10-20 14:36:56,863 - DEBUG - Lookup successful for key 32
+2024-10-20 14:36:56,864 - DEBUG - Package 32 status at 2024-10-20 13:00:00: En Route
+Package 32: En Route
+2024-10-20 14:36:56,864 - DEBUG - Package 32 status: En Route
+2024-10-20 14:36:56,864 - DEBUG - Lookup successful for key 33
+2024-10-20 14:36:56,864 - DEBUG - Package 33 status at 2024-10-20 13:00:00: En Route
+Package 33: En Route
+2024-10-20 14:36:56,864 - DEBUG - Package 33 status: En Route
+2024-10-20 14:36:56,864 - DEBUG - Lookup successful for key 34
+2024-10-20 14:36:56,864 - DEBUG - Package 34 status at 2024-10-20 13:00:00: Delivered
+Package 34: Delivered
+2024-10-20 14:36:56,864 - DEBUG - Package 34 status: Delivered
+2024-10-20 14:36:56,864 - DEBUG - Lookup successful for key 35
+2024-10-20 14:36:56,865 - DEBUG - Package 35 status at 2024-10-20 13:00:00: Delivered
+Package 35: Delivered
+2024-10-20 14:36:56,865 - DEBUG - Package 35 status: Delivered
+2024-10-20 14:36:56,865 - DEBUG - Lookup successful for key 36
+2024-10-20 14:36:56,865 - DEBUG - Package 36 status at 2024-10-20 13:00:00: En Route
+Package 36: En Route
+2024-10-20 14:36:56,865 - DEBUG - Package 36 status: En Route
+2024-10-20 14:36:56,865 - DEBUG - Lookup successful for key 37
+2024-10-20 14:36:56,865 - DEBUG - Package 37 status at 2024-10-20 13:00:00: Delivered
+Package 37: Delivered
+2024-10-20 14:36:56,865 - DEBUG - Package 37 status: Delivered
+2024-10-20 14:36:56,865 - DEBUG - Lookup successful for key 38
+2024-10-20 14:36:56,866 - DEBUG - Package 38 status at 2024-10-20 13:00:00: Delivered
+Package 38: Delivered
+2024-10-20 14:36:56,866 - DEBUG - Package 38 status: Delivered
+2024-10-20 14:36:56,866 - DEBUG - Lookup successful for key 39
+2024-10-20 14:36:56,866 - DEBUG - Package 39 status at 2024-10-20 13:00:00: En Route
+Package 39: En Route
+2024-10-20 14:36:56,866 - DEBUG - Package 39 status: En Route
+2024-10-20 14:36:56,866 - DEBUG - Lookup successful for key 40
+2024-10-20 14:36:56,866 - DEBUG - Package 40 status at 2024-10-20 13:00:00: Delivered
+Package 40: Delivered
+2024-10-20 14:36:56,866 - DEBUG - Package 40 status: Delivered

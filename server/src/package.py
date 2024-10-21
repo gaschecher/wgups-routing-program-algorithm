@@ -21,6 +21,7 @@ class Package:
         self.delivery_time = None  # Set when the package is delivered.
         self.truck = None  # Tracks which truck the package is on.
         self.load_time = None  # Set when the package is loaded onto a truck.
+        self.en_route_time = None  # Set when the truck carrying the package departs
         logging.info(f"Initialized Package {self.package_id}")
 
     def __str__(self):
@@ -30,21 +31,25 @@ class Package:
         # Update the package status when it is loaded onto a truck.
         self.truck = truck_id
         self.load_time = time
-        self.status = "En Route"
         logging.info(f"Package {self.package_id} loaded onto Truck {truck_id} at {time}")
+
+    def set_en_route(self, time):
+        self.en_route_time = time
+        logging.info(f"Package {self.package_id} en route at {time}")
 
     def deliver(self, time):
         # Mark the package as delivered and set the delivery time.
         self.delivery_time = time
-        self.status = "Delivered"
         logging.info(f"Package {self.package_id} delivered at {time}")
 
     def get_status(self, time):
         # Determine the package status based on the provided time.
         if self.delivery_time and time >= self.delivery_time:
             status = "Delivered"
-        elif self.load_time and time >= self.load_time:
+        elif self.en_route_time and time >= self.en_route_time:
             status = "En Route"
+        elif self.load_time and time >= self.load_time:
+            status = "At Hub"
         else:
             status = "At Hub"
         logging.debug(f"Package {self.package_id} status at {time}: {status}")
