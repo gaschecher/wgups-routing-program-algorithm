@@ -16,6 +16,7 @@ class Truck:
         self.route = []
         self.delivery_history = []
         self.departure_time = None
+        self.package_history = []
         logging.info(f"Initialized Truck {self.truck_id}")
 
     # Load a package onto the truck.
@@ -28,6 +29,7 @@ class Truck:
             else:
                 package.load(self.truck_id, self.time)
                 logging.debug(f"Loaded package {package.package_id} onto Truck {self.truck_id}")
+            self.package_history.append((self.time, "At Hub", package))
             return True
         logging.warning(f"Failed to load package {package.package_id} onto Truck {self.truck_id}: Capacity full")
         return False
@@ -36,6 +38,7 @@ class Truck:
         self.departure_time = time
         for package in self.packages:
             package.set_en_route(time)
+            self.package_history.append((time, "En Route", package))
         logging.info(f"Truck {self.truck_id} departed at {time}")
 
     # Deliver a package and update the truck's status.
@@ -49,6 +52,7 @@ class Truck:
         if package in self.packages:
             self.packages.remove(package)  # Remove the package from the truck.
         self.delivery_history.append((self.time, self.mileage))
+        self.package_history.append((self.time, "Delivered", package))
         logging.info(f"Delivered package {package.package_id} at {self.time}. New location: {self.current_location}, New mileage: {self.mileage}")
 
     # Return the truck to the HUB and update the truck's mileage and time.
@@ -65,6 +69,16 @@ class Truck:
             if delivery_time > time:
                 return mileage
         return self.mileage  # Return total mileage if time is after all deliveries
+
+    def get_packages_at_time(self, time):
+        packages_at_time = []
+        for event_time, event_type, package in self.package_history:
+            if event_time <= time:
+                if event_type in ["At Hub", "En Route"]:
+                    packages_at_time.append((package, event_type))
+                elif event_type == "Delivered":
+                    packages_at_time = [(p, s) for p, s in packages_at_time if p.package_id != package.package_id]
+        return packages_at_time
 
     def __str__(self):
         return f"Truck {self.truck_id}: {len(self.packages)}/{self.capacity} packages, {self.mileage:.1f} miles traveled"
