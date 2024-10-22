@@ -39,7 +39,7 @@ def get_all_packages_status():
     datetime_obj = get_datetime_param(time_str)
     
     all_packages = []
-    for i in range(1, 41):  # Assuming package IDs are from 1 to 40
+    for i in range(1, 41):
         package = api.package_hash.lookup(i)
         if package:
             status = package.get_status(datetime_obj)
@@ -59,10 +59,10 @@ def get_all_packages_status():
 
 @api.route('/mileage', methods=['GET'])
 def get_total_mileage():
-    start_time_str = request.args.get('time')  # Keep 'time' for backward compatibility
+    start_time_str = request.args.get('time')
     end_time_str = request.args.get('end_time')
     
-    # If no time parameters provided, return total mileage at completion
+    # If no time parameters provided, return total mileage at completion.
     if not start_time_str:
         total_mileage = sum(truck.mileage for truck in api.trucks)
         return jsonify({
@@ -71,10 +71,9 @@ def get_total_mileage():
             'end_time': None
         })
     
-    # Get start datetime
     start_datetime = get_datetime_param(start_time_str)
     
-    # If end time not provided, use start time for point-in-time mileage
+    # Handle point-in-time mileage calculation.
     if not end_time_str:
         total_mileage = sum(truck.get_mileage_at_time(start_datetime) for truck in api.trucks)
         return jsonify({
@@ -82,20 +81,16 @@ def get_total_mileage():
             'time': str(start_datetime.time())
         })
     
-    # Get end datetime for range calculation
     end_datetime = get_datetime_param(end_time_str)
     
     if start_datetime >= end_datetime:
         return jsonify({'error': 'Start time must be before end time'}), 400
     
-    # Calculate mileage within the time range
+    # Calculate accumulated mileage within the specified time range.
     range_mileage = 0
     for truck in api.trucks:
-        # Get mileage at end time
         end_mileage = truck.get_mileage_at_time(end_datetime)
-        # Get mileage at start time
         start_mileage = truck.get_mileage_at_time(start_datetime)
-        # Add the difference to get mileage within range
         range_mileage += end_mileage - start_mileage
     
     return jsonify({
@@ -118,6 +113,7 @@ def get_truck_packages_status():
     if start_datetime >= end_datetime:
         return jsonify({'error': 'start_time must be before end_time'}), 400
     
+    # Track package status changes for each truck over time.
     truck_packages = {}
     for truck in api.trucks:
         truck_packages[f'Truck {truck.truck_id}'] = []

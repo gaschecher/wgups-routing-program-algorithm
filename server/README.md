@@ -30,7 +30,7 @@ Provides a mapping of location names to addresses and a distance matrix for calc
 
 Contains the initial package data including addresses, deadlines, and other relevant information for each package.
 
-## How to Run This
+## How to Run This Independently
 
 1. Clone or download the repository to your local machine.
 2. Navigate to the project directory in your terminal.

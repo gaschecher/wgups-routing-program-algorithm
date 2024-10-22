@@ -33,7 +33,6 @@ const Dashboard = () => {
 
   const formatTime = (timeStr) => {
     if (!timeStr) return "";
-    // Remove any non-digit characters
     const digits = timeStr.replace(/\D/g, "");
     if (digits.length >= 4) {
       return `${digits.slice(0, 2)}:${digits.slice(2, 4)}`;
@@ -45,7 +44,6 @@ const Dashboard = () => {
     try {
       const queryParams = new URLSearchParams();
 
-      // Format and add time parameters
       const startTime = formatTime(filters.startTime);
       const endTime = formatTime(filters.endTime);
 
@@ -66,12 +64,10 @@ const Dashboard = () => {
 
       let data = await response.json();
 
-      // If single package response, convert to array
       if (!Array.isArray(data)) {
         data = [data];
       }
 
-      // Format the data to match the display requirements
       const formattedPackages = data.map((pkg) => ({
         ...pkg,
         delivery_time: pkg.delivery_time
@@ -88,7 +84,6 @@ const Dashboard = () => {
 
       setPackages(formattedPackages);
 
-      // Fetch mileage
       const mileageResponse = await fetch(`/api/mileage?${queryParams}`);
       if (!mileageResponse.ok) {
         throw new Error("Failed to fetch mileage");
@@ -105,7 +100,6 @@ const Dashboard = () => {
   const handleFilterChange = (field) => (event) => {
     const value = event.target.value;
 
-    // Handle time formatting
     if (field === "startTime" || field === "endTime") {
       const formattedTime = formatTime(value);
       setFilters((prev) => ({
