@@ -28,7 +28,8 @@ def get_package_status(package_id):
             'zip': package.zip_code,
             'weight': package.weight,
             'deadline': str(package.deadline),
-            'delivery_time': str(package.delivery_time) if package.delivery_time else None
+            'delivery_time': str(package.delivery_time) if package.delivery_time else None,
+            'truck': package.truck
         })
     return jsonify({'error': 'Package not found'}), 404
 
@@ -51,7 +52,8 @@ def get_all_packages_status():
                 'zip': package.zip_code,
                 'weight': package.weight,
                 'deadline': str(package.deadline),
-                'delivery_time': str(package.delivery_time) if package.delivery_time else None
+                'delivery_time': str(package.delivery_time) if package.delivery_time else None,
+                'truck': package.truck
             })
     return jsonify(all_packages)
 
@@ -94,7 +96,8 @@ def get_truck_packages_status():
                     'weight': package.weight,
                     'deadline': str(package.deadline),
                     'delivery_time': str(package.delivery_time) if package.delivery_time else None,
-                    'time': current_time.strftime('%H:%M')
+                    'time': current_time.strftime('%H:%M'),
+                    'truck': truck.truck_id
                 })
             current_time += timedelta(minutes=30)
     

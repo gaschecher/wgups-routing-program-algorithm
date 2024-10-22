@@ -24,7 +24,6 @@ const Dashboard = () => {
   const [filters, setFilters] = useState({
     startTime: "",
     endTime: "",
-    truckNumber: "",
     packageId: "",
   });
 
@@ -52,7 +51,6 @@ const Dashboard = () => {
 
       if (startTime) queryParams.append("time", startTime);
       if (endTime) queryParams.append("end_time", endTime);
-      if (filters.truckNumber) queryParams.append("truck", filters.truckNumber);
       if (filters.packageId)
         queryParams.append("package_id", filters.packageId);
 
@@ -131,7 +129,6 @@ const Dashboard = () => {
     setFilters({
       startTime: "",
       endTime: "",
-      truckNumber: "",
       packageId: "",
     });
     setTimeout(fetchData, 0);
@@ -150,7 +147,7 @@ const Dashboard = () => {
         sx={{ p: 3, mb: 3 }}
       >
         <Grid container spacing={2} alignItems="center">
-          <Grid item xs={12} md={2.5}>
+          <Grid item xs={12} md={3}>
             <TextField
               fullWidth
               label="Start Time"
@@ -163,7 +160,7 @@ const Dashboard = () => {
               }}
             />
           </Grid>
-          <Grid item xs={12} md={2.5}>
+          <Grid item xs={12} md={3}>
             <TextField
               fullWidth
               label="End Time"
@@ -176,21 +173,7 @@ const Dashboard = () => {
               }}
             />
           </Grid>
-          <Grid item xs={12} md={2.5}>
-            <TextField
-              fullWidth
-              label="Truck Number"
-              type="number"
-              value={filters.truckNumber}
-              onChange={handleFilterChange("truckNumber")}
-              inputProps={{ min: 1, max: 3 }}
-              helperText="Enter 1, 2, or 3"
-              InputLabelProps={{
-                shrink: true,
-              }}
-            />
-          </Grid>
-          <Grid item xs={12} md={2.5}>
+          <Grid item xs={12} md={3}>
             <TextField
               fullWidth
               label="Package ID"
@@ -204,7 +187,7 @@ const Dashboard = () => {
               }}
             />
           </Grid>
-          <Grid item xs={12} md={2}>
+          <Grid item xs={12} md={3}>
             <Box sx={{ display: "flex", gap: 1 }}>
               <Button
                 variant="contained"
