@@ -41,71 +41,66 @@ def get_distance(from_address, to_address):
     
     return distance_matrix[from_index][to_index]
 
-# Find the nearest package for the truck from the list of undelivered packages.
-def nearest_neighbor(truck, undelivered_packages):
-    logging.debug(f"Finding nearest neighbor for truck {truck.truck_id}")
-    if not undelivered_packages:
-        logging.debug("No undelivered packages left")
-        return None
-    
-    # Prioritize packages with a deadline.
-    deadline_packages = [p for p in undelivered_packages if p.deadline and p.deadline != ""]
-    if deadline_packages:
-        nearest_package = min(deadline_packages, 
-                              key=lambda p: get_distance(truck.current_location, p.address))
-    else:
-        nearest_package = min(undelivered_packages, 
-                              key=lambda p: get_distance(truck.current_location, p.address))
-    
-    logging.debug(f"Nearest package found: {nearest_package.package_id}")
-    return nearest_package
+def optimize_routes(trucks, distance_matrix):
+    # Optimize delivery routes for all trucks while minimizing total distance.
+    # Returns a dictionary mapping truck IDs to their optimized routes.
+    routes = {}
+    HUB_ADDRESS = "4001 South 700 East"
 
-# Calculate the delivery route for a truck using the nearest neighbor.
-def calculate_route(truck, packages):
-    logging.info(f"Calculating route for truck {truck.truck_id}")
-    undelivered = packages.copy()
-    route = []
-    current_location = "4001 South 700 East, Salt Lake City, UT 84107"  # Packages always start at the HUB.
-    
-    # Loop through all undelivered packages and build the route.
-    while undelivered:
-        next_package = nearest_neighbor(truck, undelivered)
-        if next_package is None:
-            break
+    def find_nearest_package(current_location, packages):
+        #Find the nearest package from the current location.
+        if not packages:
+            return None
+        return min(packages, key=lambda p: get_distance(current_location, p.address))
+
+    def build_route(truck):
+        # Build an optimized route for a single truck.
+        route = []
+        current_location = HUB_ADDRESS
+        remaining_packages = truck.packages.copy()
         
-        try:
-            # Calculate the distance to the next package and add it to the route.
+        # First handle deadline packages.
+        deadline_packages = sorted(
+            [p for p in remaining_packages if p.deadline and p.deadline != ""],
+            key=lambda x: (x.deadline, get_distance(current_location, x.address))
+        )
+        
+        # Process deadline packages first.
+        for package in deadline_packages:
+            if package in remaining_packages:  # Check if package is still unassigned.
+                distance = get_distance(current_location, package.address)
+                route.append((package, distance))
+                current_location = package.address
+                remaining_packages.remove(package)
+        
+        # Process remaining packages using nearest neighbor.
+        while remaining_packages:
+            next_package = find_nearest_package(current_location, remaining_packages)
+            if not next_package:
+                break
+                
             distance = get_distance(current_location, next_package.address)
             route.append((next_package, distance))
-            logging.debug(f"Added to route: Package {next_package.package_id}, Distance: {distance}")
             current_location = next_package.address
-            undelivered.remove(next_package)
-        except ValueError as e:
-            logging.error(f"Error calculating distance: {e}")
-            logging.error(f"Current location: {current_location}")
-            logging.error(f"Next package address: {next_package.address}")
-            logging.error(f"Truck ID: {truck.truck_id}")
-            logging.error(f"Remaining undelivered packages: {[p.package_id for p in undelivered]}")
-            sys.exit(1)
-    
-    # After all packages are delivered, calculate distance back to the hub.
-    try:
-        distance_to_hub = get_distance(current_location, "4001 South 700 East, Salt Lake City, UT 84107")
-        route.append((None, distance_to_hub))
-        logging.debug(f"Added return to hub: Distance: {distance_to_hub}")
-    except ValueError as e:
-        logging.error(f"Error calculating distance back to hub: {e}")
-        logging.error(f"Last location: {current_location}")
-        sys.exit(1)
-    
-    logging.info(f"Finished calculating route for truck {truck.truck_id}. Total stops: {len(route)}")
-    return route
+            remaining_packages.remove(next_package)
+        
+        # Add return to hub.
+        if route:
+            final_distance = get_distance(current_location, HUB_ADDRESS)
+            route.append((None, final_distance))
+        
+        return route
 
-# Optimize routes for all trucks.
-def optimize_routes(trucks, distances):
-    logging.info("Optimizing routes for all trucks")
-    routes = {}
+    # Process each truck.
+    total_distance = 0
     for truck in trucks:
-        routes[truck.truck_id] = calculate_route(truck, truck.packages)
-    logging.info("Finished optimizing routes")
+        route = build_route(truck)
+        routes[truck.truck_id] = route
+        
+        # Calculate and log route distance.
+        route_distance = sum(distance for _, distance in route)
+        total_distance += route_distance
+        logging.info(f"Route {truck.truck_id} distance: {route_distance:.1f} miles")
+    
+    logging.info(f"Total distance for all routes: {total_distance:.1f} miles")
     return routes
