@@ -2,7 +2,7 @@ from datetime import datetime
 import logging
 import re
 import sys
-from .data.locations import location_to_address, distance_matrix
+from data.locations import location_to_address, distance_matrix
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 

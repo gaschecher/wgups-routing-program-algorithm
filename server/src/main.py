@@ -3,12 +3,12 @@
 from datetime import datetime, timedelta
 import logging
 import sys
-from .package import Package
-from .hash_table import HashTable
-from .truck import Truck
-from .routing import optimize_routes, clean_address, get_distance
-from .data.locations import location_to_address, distance_matrix
-from .data.packages import packages
+from package import Package
+from hash_table import HashTable
+from truck import Truck
+from routing import optimize_routes, clean_address, get_distance
+from data.locations import location_to_address, distance_matrix
+from data.packages import packages
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
