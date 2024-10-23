@@ -122,8 +122,8 @@ class CLI:
 
     def show_all_packages_status(self, start_time: datetime, end_time: datetime):
         # Display status of all packages within a time range.
-        print(f"\nPackage Status Report: {start_time.strftime('%I:%M %p')} to {end_time.strftime('%I:%M %p')}")
-        print("=" * 80)
+        output = f"\nPackage Status Report: {start_time.strftime('%I:%M %p')} to {end_time.strftime('%I:%M %p')}\n"
+        output += "=" * 80 + "\n"
 
         for truck in self.trucks:
             truck_packages = set()
@@ -131,8 +131,8 @@ class CLI:
                 truck_packages.add(package.package_id)
             
             if truck_packages:
-                print(f"\nTruck {truck.truck_id}")
-                print("-" * 80)
+                output += f"\nTruck {truck.truck_id}\n"
+                output += "-" * 80 + "\n"
                 
                 for package_id in sorted(truck_packages):
                     package = self.package_hash.lookup(package_id)
@@ -151,25 +151,36 @@ class CLI:
                             else:
                                 event_time = start_time.strftime('%I:%M %p')
                         
-                        print(f"\nPackage ID: {details['package_id']}")
-                        print(f"Status: {details['status']}")
+                        output += f"\nPackage ID: {details['package_id']}\n"
+                        output += f"Status: {details['status']}\n"
                         if details['status'] == "Delivered":
-                            print(f"Delivery Time: {event_time}")
+                            output += f"Delivery Time: {event_time}\n"
                         elif details['status'] == "Delayed":
-                            print(f"Delayed Until: {event_time}")
+                            output += f"Delayed Until: {event_time}\n"
                         elif details['status'] == "En Route":
-                            print(f"Departure Time: {event_time}")
+                            output += f"Departure Time: {event_time}\n"
                         else:
-                            print(f"Current Time: {event_time}")
-                        print(f"Delivery Deadline: {details['deadline']}")
-                        print(f"Address: {details['address']}")
-                        print(f"City: {details['city']}")
-                        print(f"State: {details['state']}")
-                        print(f"ZIP: {details['zip_code']}")
+                            output += f"Current Time: {event_time}\n"
+                        output += f"Delivery Deadline: {details['deadline']}\n"
+                        output += f"Address: {details['address']}\n"
+                        output += f"City: {details['city']}\n"
+                        output += f"State: {details['state']}\n"
+                        output += f"ZIP: {details['zip_code']}\n"
                         if details['delivery_time']:
-                            print(f"Actual Delivery Time: {details['delivery_time'].strftime('%I:%M %p')}")
+                            output += f"Actual Delivery Time: {details['delivery_time'].strftime('%I:%M %p')}\n"
                 
-                print("-" * 80)
+                output += "-" * 80 + "\n"
+
+        filename = f"package_status_{start_time.strftime('%H%M')}_to_{end_time.strftime('%H%M')}.txt"
+        try:
+            with open(filename, 'w') as f:
+                f.write(output)
+            print(f"\nPackage status has been saved to {filename}")
+        except Exception as e:
+            print(f"\nError saving to file: {e}")
+            print("Displaying output to console instead:\n")
+        
+        print(output)
 
     def show_total_mileage(self, time_point: datetime):
         # Display total mileage for all trucks at a specific time.
@@ -387,7 +398,7 @@ def main():
         print("Initializing WGUPS Package Tracking System...")
         package_hash, trucks = initialize_delivery_system()
         print("Initialization complete. Starting interface...")
-        
+
         # Create and run the CLI.
         cli = CLI(package_hash, trucks)
         cli.run()
