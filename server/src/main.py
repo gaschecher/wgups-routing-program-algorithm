@@ -171,7 +171,7 @@ class CLI:
                 
                 output += "-" * 80 + "\n"
 
-        filename = f"package_status_{start_time.strftime('%H%M')}_to_{end_time.strftime('%H%M')}.txt"
+        filename = f"data/package_status_{start_time.strftime('%H%M')}_to_{end_time.strftime('%H%M')}.txt"
         try:
             with open(filename, 'w') as f:
                 f.write(output)
@@ -289,7 +289,7 @@ def initialize_delivery_system():
     #Returns:
     #    tuple: (package_hash, trucks) containing the initialized hash table.
     #    and list of truck objects with assigned routes.
-    
+
     package_hash = create_package_hash_table()
     trucks = [Truck(1), Truck(2), Truck(3)]
     all_packages = [package_hash.lookup(i) for i in range(1, 41) if package_hash.lookup(i)]

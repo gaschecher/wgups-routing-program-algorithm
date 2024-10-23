@@ -1,0 +1,387 @@
+
+Package Status Report: 09:35 AM to 10:25 AM
+================================================================================
+
+Truck 1
+--------------------------------------------------------------------------------
+
+Package ID: 11
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 00 Taylorsville Blvd
+City: Salt Lake City
+State: UT
+ZIP: 84118
+
+Package ID: 13
+Status: Delivered
+Delivery Time: 10:01 AM
+Delivery Deadline: 10:30
+Address: 10 W 500 S
+City: Salt Lake City
+State: UT
+ZIP: 84104
+Actual Delivery Time: 10:01 AM
+
+Package ID: 14
+Status: Delivered
+Delivery Time: 
+Delivery Deadline: 10:30
+Address: 00 S 1300 E
+City: Millcreek
+State: UT
+ZIP: 84117
+Actual Delivery Time: 08:06 AM
+
+Package ID: 15
+Status: En Route
+Departure Time: 
+Delivery Deadline: 9:00
+Address: 80 S 2300 E
+City: Holladay
+State: UT
+ZIP: 84117
+
+Package ID: 16
+Status: Delivered
+Delivery Time: 
+Delivery Deadline: 10:30
+Address: 80 S 2300 E
+City: Holladay
+State: UT
+ZIP: 84117
+Actual Delivery Time: 08:56 AM
+
+Package ID: 19
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 7 W Price Ave
+City: Salt Lake City
+State: UT
+ZIP: 84115
+
+Package ID: 20
+Status: Delivered
+Delivery Time: 
+Delivery Deadline: 10:30
+Address: 95 Main St
+City: Salt Lake City
+State: UT
+ZIP: 84115
+Actual Delivery Time: 08:31 AM
+
+Package ID: 22
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 51 South 900 East
+City: Murray
+State: UT
+ZIP: 84121
+
+Package ID: 23
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 00 South 2700 West
+City: Salt Lake City
+State: UT
+ZIP: 84118
+
+Package ID: 24
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 25 State St
+City: Murray
+State: UT
+ZIP: 84107
+
+Package ID: 26
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 83 South 900 East #104
+City: Salt Lake City
+State: UT
+ZIP: 84117
+
+Package ID: 31
+Status: Delivered
+Delivery Time: 09:39 AM
+Delivery Deadline: 10:30
+Address: 65 S 900 W
+City: Salt Lake City
+State: UT
+ZIP: 84119
+Actual Delivery Time: 09:39 AM
+
+Package ID: 34
+Status: Delivered
+Delivery Time: 
+Delivery Deadline: 10:30
+Address: 80 S 2300 E
+City: Holladay
+State: UT
+ZIP: 84117
+Actual Delivery Time: 09:08 AM
+--------------------------------------------------------------------------------
+
+Truck 2
+--------------------------------------------------------------------------------
+
+Package ID: 1
+Status: Delivered
+Delivery Time: 
+Delivery Deadline: 10:30
+Address: 5 W Oakland Ave
+City: Salt Lake City
+State: UT
+ZIP: 84115
+Actual Delivery Time: 08:18 AM
+
+Package ID: 3
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 3 Canyon Rd
+City: Salt Lake City
+State: UT
+ZIP: 84103
+
+Package ID: 5
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 0 S State St
+City: Salt Lake City
+State: UT
+ZIP: 84111
+
+Package ID: 8
+Status: Delivered
+Delivery Time: 10:01 AM
+Delivery Deadline: EOD
+Address: 0 State St
+City: Salt Lake City
+State: UT
+ZIP: 84103
+Actual Delivery Time: 10:01 AM
+
+Package ID: 18
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 88 4800 S
+City: Salt Lake City
+State: UT
+ZIP: 84123
+
+Package ID: 27
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 60 Dalton Ave S
+City: Salt Lake City
+State: UT
+ZIP: 84104
+
+Package ID: 29
+Status: Delivered
+Delivery Time: 
+Delivery Deadline: 10:30
+Address: 30 2100 S
+City: Salt Lake City
+State: UT
+ZIP: 84106
+Actual Delivery Time: 09:08 AM
+
+Package ID: 30
+Status: Delivered
+Delivery Time: 09:42 AM
+Delivery Deadline: 10:30
+Address: 0 State St
+City: Salt Lake City
+State: UT
+ZIP: 84103
+Actual Delivery Time: 09:42 AM
+
+Package ID: 35
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 60 Dalton Ave S
+City: Salt Lake City
+State: UT
+ZIP: 84104
+
+Package ID: 36
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 00 Parkway Blvd
+City: West Valley City
+State: UT
+ZIP: 84119
+
+Package ID: 37
+Status: Delivered
+Delivery Time: 
+Delivery Deadline: 10:30
+Address: 0 S State St
+City: Salt Lake City
+State: UT
+ZIP: 84111
+Actual Delivery Time: 09:22 AM
+
+Package ID: 38
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 0 S State St
+City: Salt Lake City
+State: UT
+ZIP: 84111
+
+Package ID: 39
+Status: En Route
+Departure Time: 
+Delivery Deadline: EOD
+Address: 10 W 500 S
+City: Salt Lake City
+State: UT
+ZIP: 84104
+
+Package ID: 40
+Status: Delivered
+Delivery Time: 
+Delivery Deadline: 10:30
+Address: 0 W 2880 S
+City: Salt Lake City
+State: UT
+ZIP: 84115
+Actual Delivery Time: 08:35 AM
+--------------------------------------------------------------------------------
+
+Truck 3
+--------------------------------------------------------------------------------
+
+Package ID: 2
+Status: At Hub
+Current Time: 09:35 AM
+Delivery Deadline: EOD
+Address: 30 S 500 E
+City: Salt Lake City
+State: UT
+ZIP: 84106
+
+Package ID: 4
+Status: At Hub
+Current Time: 09:35 AM
+Delivery Deadline: EOD
+Address: 0 W 2880 S
+City: Salt Lake City
+State: UT
+ZIP: 84115
+
+Package ID: 6
+Status: At Hub
+Current Time: 09:35 AM
+Delivery Deadline: 10:30
+Address: 60 Lester St
+City: West Valley City
+State: UT
+ZIP: 84119
+
+Package ID: 7
+Status: At Hub
+Current Time: 09:35 AM
+Delivery Deadline: EOD
+Address: 30 2100 S
+City: Salt Lake City
+State: UT
+ZIP: 84106
+
+Package ID: 9
+Status: Delayed
+Delayed Until: 10:20
+Delivery Deadline: EOD
+Address: 0 State St
+City: Salt Lake City
+State: UT
+ZIP: 84103
+
+Package ID: 10
+Status: At Hub
+Current Time: 09:35 AM
+Delivery Deadline: EOD
+Address: 0 E 900 South
+City: Salt Lake City
+State: UT
+ZIP: 84105
+
+Package ID: 12
+Status: At Hub
+Current Time: 09:35 AM
+Delivery Deadline: EOD
+Address: 75 W Valley Central Station Bus Loop
+City: West Valley City
+State: UT
+ZIP: 84119
+
+Package ID: 17
+Status: At Hub
+Current Time: 09:35 AM
+Delivery Deadline: EOD
+Address: 48 S 1100 W
+City: Salt Lake City
+State: UT
+ZIP: 84119
+
+Package ID: 21
+Status: At Hub
+Current Time: 09:35 AM
+Delivery Deadline: EOD
+Address: 95 Main St
+City: Salt Lake City
+State: UT
+ZIP: 84115
+
+Package ID: 25
+Status: At Hub
+Current Time: 09:35 AM
+Delivery Deadline: 10:30
+Address: 83 South 900 East #104
+City: Salt Lake City
+State: UT
+ZIP: 84117
+
+Package ID: 28
+Status: At Hub
+Current Time: 09:35 AM
+Delivery Deadline: EOD
+Address: 35 Main St
+City: Salt Lake City
+State: UT
+ZIP: 84115
+
+Package ID: 32
+Status: At Hub
+Current Time: 09:35 AM
+Delivery Deadline: EOD
+Address: 65 S 900 W
+City: Salt Lake City
+State: UT
+ZIP: 84119
+
+Package ID: 33
+Status: At Hub
+Current Time: 09:35 AM
+Delivery Deadline: EOD
+Address: 30 S 500 E
+City: Salt Lake City
+State: UT
+ZIP: 84106
+--------------------------------------------------------------------------------
