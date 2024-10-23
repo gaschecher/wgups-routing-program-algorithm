@@ -7,6 +7,7 @@ A delivery management system built with Flask (backend) and React (frontend) tha
 3. Minimizing total distance traveled
 4. Dynamically adjusting routes based on truck capacity and driver availability
 
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
@@ -85,6 +86,9 @@ npm start
 ```
 
 The frontend application will start running on `http://localhost:3000`
+
+
+![image](https://github.com/user-attachments/assets/cba2e3b0-dc29-402e-a0a2-9bc1ef329190)
 
 ## API Endpoints
 
