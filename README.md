@@ -31,6 +31,8 @@ A delivery management system built with Python that optimizes package delivery r
    ```bash
    python main.py --interactive
    ```
+![image](https://github.com/user-attachments/assets/ec1c8df3-0579-4088-999d-aa6da54f0679)
+
 
 ## Program Flow
 
