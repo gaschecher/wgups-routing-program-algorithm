@@ -5,7 +5,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 
 class Truck:
     def __init__(self, truck_id, capacity=16, speed=18):
-        # Initialize truck attributes
+        # Initialize truck attributes.
         self.truck_id = truck_id
         self.capacity = capacity
         self.speed = speed
@@ -68,7 +68,7 @@ class Truck:
         for delivery_time, mileage in self.delivery_history:
             if delivery_time > time:
                 return mileage
-        return self.mileage  # Return total mileage if time is after all deliveries
+        return self.mileage
 
     def get_packages_at_time(self, time):
         packages_at_time = []
